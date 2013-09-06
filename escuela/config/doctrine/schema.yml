@@ -1,0 +1,298 @@
+Alumno:
+  connection: doctrine
+  tableName: alumno
+  columns:
+    id_alumno:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ap_paterno:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ap_materno:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    n_lista:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_grupo:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Grupo:
+      local: id_grupo
+      foreign: id_grupo
+      type: one
+    AlumnoProfesorMateria:
+      local: id_alumno
+      foreign: alumnoid_alumno
+      type: many
+AlumnoProfesorMateria:
+  connection: doctrine
+  tableName: alumno_profesor_materia
+  columns:
+    id_alumno_profesor_materia:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    alumnoid_alumno:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    profesor_materiaid_profesor_materia:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    ProfesorMateria:
+      local: profesor_materiaid_profesor_materia
+      foreign: id_profesor_materia
+      type: one
+    Alumno:
+      local: alumnoid_alumno
+      foreign: id_alumno
+      type: one
+    Calificacion:
+      local: id_alumno_profesor_materia
+      foreign: alumno_profesor_materiaid_alumno_profesor_materia
+      type: many
+Calificacion:
+  connection: doctrine
+  tableName: calificacion
+  columns:
+    id_unidad:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    numero_unidad:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    clasificacion:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    asistencia:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fltas:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    alumno_profesor_materiaid_alumno_profesor_materia:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    AlumnoProfesorMateria:
+      local: alumno_profesor_materiaid_alumno_profesor_materia
+      foreign: id_alumno_profesor_materia
+      type: one
+Grupo:
+  connection: doctrine
+  tableName: grupo
+  columns:
+    id_grupo:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+  relations:
+    Alumno:
+      local: id_grupo
+      foreign: id_grupo
+      type: many
+Materia:
+  connection: doctrine
+  tableName: materia
+  columns:
+    id_materia:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(70)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    cantidad_unidades:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    ProfesorMateria:
+      local: id_materia
+      foreign: materiaid_materia
+      type: many
+Profesor:
+  connection: doctrine
+  tableName: profesor
+  columns:
+    id_profesor:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ap_paterno:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ap_materno:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    ProfesorMateria:
+      local: id_profesor
+      foreign: profesorid_profesor
+      type: many
+ProfesorMateria:
+  connection: doctrine
+  tableName: profesor_materia
+  columns:
+    id_profesor_materia:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    materiaid_materia:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    profesorid_profesor:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    anio:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    semestreid_semestre:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Semestre:
+      local: semestreid_semestre
+      foreign: id_semestre
+      type: one
+    Materia:
+      local: materiaid_materia
+      foreign: id_materia
+      type: one
+    Profesor:
+      local: profesorid_profesor
+      foreign: id_profesor
+      type: one
+    AlumnoProfesorMateria:
+      local: id_profesor_materia
+      foreign: profesor_materiaid_profesor_materia
+      type: many
+Semestre:
+  connection: doctrine
+  tableName: semestre
+  columns:
+    id_semestre:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    periodo:
+      type: string(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    ProfesorMateria:
+      local: id_semestre
+      foreign: semestreid_semestre
+      type: many
