@@ -1,3 +1,3 @@
-<h1>New Profesor</h1>
+<h1>Nuevo Profesor</h1>
 
 <?php include_partial('form', array('form' => $form)) ?>

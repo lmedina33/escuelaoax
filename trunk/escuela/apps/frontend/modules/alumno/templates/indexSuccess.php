@@ -1,6 +1,17 @@
+<?php use_javascript('jquery.dataTables.min.js') ?>
+<script>
+    $(document).ready(function(){
+        $("#tablaIndex").dataTable({
+            "bFilter":  true,
+            "bJQueryUI":true,
+            "bPaginate": false,
+            "sScrollY": '240px'
+        });
+    })
+</script>
 <h1>Alumnos List</h1>
 
-<table>
+<table id="tablaIndex" borrder="1">
   <thead>
     <tr>
       <th>Id alumno</th>

@@ -1,12 +1,24 @@
-<h1>Profesors List</h1>
+<?php use_javascript('jquery.dataTables.min.js') ?>
+<script>
+    $(document).ready(function(){
+        $("#tablaIndex").dataTable({
+            "bFilter":  true,
+            "bJQueryUI":true,
+            "bPaginate": false,
+            "sScrollY": '240px'
+        });
+    })
+</script>
 
-<table>
+<h1>Profesores</h1>
+
+<table id="tablaIndex" border="1">
   <thead>
     <tr>
-      <th>Id profesor</th>
+      <th>Id</th>
       <th>Nombre</th>
-      <th>Ap paterno</th>
-      <th>Ap materno</th>
+      <th>Apellido paterno</th>
+      <th>Apellido materno</th>
     </tr>
   </thead>
   <tbody>
@@ -21,4 +33,4 @@
   </tbody>
 </table>
 
-  <a href="<?php echo url_for('profesor/new') ?>">New</a>
+  <a href="<?php echo url_for('profesor/new') ?>">Nuevo</a>
