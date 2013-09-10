@@ -728,3 +728,1392 @@ Sep 06 17:42:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2
 Sep 06 17:42:06 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/create" 31.70 ms (1)
 Sep 06 17:42:06 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 8.14 ms (1)
 Sep 06 17:42:06 symfony [info] {sfWebResponse} Send content (37820 o)
+Sep 10 10:57:06 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 10:57:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 10:57:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 10:57:06 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 10:57:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 10:57:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 10:57:06 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 10:57:06 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 10:57:06 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 10:57:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 10:57:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 10:57:06 symfony [info] {sfWebDebugLogger} Configuration 60.93 ms (10)
+Sep 10 10:57:06 symfony [info] {sfWebDebugLogger} Factories 332.51 ms (1)
+Sep 10 10:57:06 symfony [info] {sfWebDebugLogger} Action "profesor/index" 81.69 ms (1)
+Sep 10 10:57:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 10:57:06 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 95.88 ms (1)
+Sep 10 10:57:06 symfony [info] {sfWebResponse} Send content (34870 o)
+Sep 10 11:02:08 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:02:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:02:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:02:08 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:02:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:02:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:02:08 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:02:08 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:02:08 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:02:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:02:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:02:08 symfony [info] {sfWebDebugLogger} Configuration 12.31 ms (9)
+Sep 10 11:02:08 symfony [info] {sfWebDebugLogger} Factories 41.81 ms (1)
+Sep 10 11:02:08 symfony [info] {sfWebDebugLogger} Action "profesor/index" 57.07 ms (1)
+Sep 10 11:02:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:02:08 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 25.64 ms (1)
+Sep 10 11:02:08 symfony [info] {sfWebResponse} Send content (34869 o)
+Sep 10 11:20:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:20:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:20:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:20:55 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:20:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:20:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:20:55 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:20:55 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:20:55 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:20:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:20:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:20:55 symfony [info] {sfWebDebugLogger} Configuration 12.51 ms (9)
+Sep 10 11:20:55 symfony [info] {sfWebDebugLogger} Factories 41.64 ms (1)
+Sep 10 11:20:55 symfony [info] {sfWebDebugLogger} Action "profesor/index" 58.26 ms (1)
+Sep 10 11:20:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:20:55 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 24.40 ms (1)
+Sep 10 11:20:55 symfony [info] {sfWebResponse} Send content (34869 o)
+Sep 10 11:21:18 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:21:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:21:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:21:18 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:21:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:21:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:21:19 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:21:19 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:21:19 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:21:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:21:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:21:19 symfony [info] {sfWebDebugLogger} Configuration 12.17 ms (9)
+Sep 10 11:21:19 symfony [info] {sfWebDebugLogger} Factories 43.72 ms (1)
+Sep 10 11:21:19 symfony [info] {sfWebDebugLogger} Action "profesor/index" 58.52 ms (1)
+Sep 10 11:21:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:21:19 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 24.66 ms (1)
+Sep 10 11:21:19 symfony [info] {sfWebResponse} Send content (34897 o)
+Sep 10 11:23:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:23:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:23:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:23:59 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:23:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:23:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:23:59 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:23:59 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:23:59 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:23:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:23:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:23:59 symfony [info] {sfWebDebugLogger} Configuration 11.84 ms (9)
+Sep 10 11:23:59 symfony [info] {sfWebDebugLogger} Factories 37.48 ms (1)
+Sep 10 11:23:59 symfony [info] {sfWebDebugLogger} Action "profesor/index" 69.77 ms (1)
+Sep 10 11:23:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:23:59 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 20.00 ms (1)
+Sep 10 11:24:00 symfony [info] {sfWebResponse} Send content (35059 o)
+Sep 10 11:25:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:25:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:25:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:25:05 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:25:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:25:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:25:06 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:25:06 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:25:06 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:25:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:25:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:25:06 symfony [info] {sfWebDebugLogger} Configuration 14.41 ms (9)
+Sep 10 11:25:06 symfony [info] {sfWebDebugLogger} Factories 48.47 ms (1)
+Sep 10 11:25:06 symfony [info] {sfWebDebugLogger} Action "profesor/index" 78.51 ms (1)
+Sep 10 11:25:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:25:06 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 25.51 ms (1)
+Sep 10 11:25:06 symfony [info] {sfWebResponse} Send content (35194 o)
+Sep 10 11:26:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:26:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:26:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:26:01 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:26:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:26:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:26:02 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:26:02 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:26:02 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:26:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:26:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:26:02 symfony [info] {sfWebDebugLogger} Configuration 12.11 ms (9)
+Sep 10 11:26:02 symfony [info] {sfWebDebugLogger} Factories 55.41 ms (1)
+Sep 10 11:26:02 symfony [info] {sfWebDebugLogger} Action "profesor/index" 70.49 ms (1)
+Sep 10 11:26:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:26:02 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 35.24 ms (1)
+Sep 10 11:26:02 symfony [info] {sfWebResponse} Send content (35185 o)
+Sep 10 11:26:16 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:26:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:26:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:26:16 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:26:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:26:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:26:16 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:26:16 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:26:16 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:26:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:26:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:26:16 symfony [info] {sfWebDebugLogger} Configuration 14.70 ms (9)
+Sep 10 11:26:16 symfony [info] {sfWebDebugLogger} Factories 34.37 ms (1)
+Sep 10 11:26:16 symfony [info] {sfWebDebugLogger} Action "profesor/index" 59.71 ms (1)
+Sep 10 11:26:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:26:16 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 21.43 ms (1)
+Sep 10 11:26:16 symfony [info] {sfWebResponse} Send content (35196 o)
+Sep 10 11:26:30 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:26:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:26:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:26:31 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:26:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:26:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:26:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:26:31 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:26:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:26:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:26:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:26:31 symfony [info] {sfWebDebugLogger} Configuration 15.60 ms (9)
+Sep 10 11:26:31 symfony [info] {sfWebDebugLogger} Factories 51.44 ms (1)
+Sep 10 11:26:31 symfony [info] {sfWebDebugLogger} Action "profesor/index" 75.33 ms (1)
+Sep 10 11:26:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:26:31 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 24.51 ms (1)
+Sep 10 11:26:31 symfony [info] {sfWebResponse} Send content (35163 o)
+Sep 10 11:27:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 11:27:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:27:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:27:10 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 11:27:10 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 11:27:11 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:27:11 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:27:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:27:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:27:11 symfony [info] {sfWebDebugLogger} Configuration 41.77 ms (10)
+Sep 10 11:27:11 symfony [info] {sfWebDebugLogger} Factories 28.95 ms (1)
+Sep 10 11:27:11 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.11 ms (1)
+Sep 10 11:27:11 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 25.21 ms (1)
+Sep 10 11:27:11 symfony [info] {sfWebResponse} Send content (31486 o)
+Sep 10 11:27:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:27:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:27:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:27:13 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:27:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:27:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:27:13 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:27:13 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:27:13 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:27:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:27:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:27:13 symfony [info] {sfWebDebugLogger} Configuration 12.48 ms (9)
+Sep 10 11:27:13 symfony [info] {sfWebDebugLogger} Factories 43.19 ms (1)
+Sep 10 11:27:13 symfony [info] {sfWebDebugLogger} Action "profesor/index" 71.31 ms (1)
+Sep 10 11:27:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:27:13 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 20.93 ms (1)
+Sep 10 11:27:13 symfony [info] {sfWebResponse} Send content (35212 o)
+Sep 10 11:27:34 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:27:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:27:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:27:34 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:27:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:27:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:27:34 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:27:34 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:27:34 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:27:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:27:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:27:34 symfony [info] {sfWebDebugLogger} Configuration 15.63 ms (9)
+Sep 10 11:27:34 symfony [info] {sfWebDebugLogger} Factories 41.04 ms (1)
+Sep 10 11:27:34 symfony [info] {sfWebDebugLogger} Action "profesor/index" 64.31 ms (1)
+Sep 10 11:27:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:27:34 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 21.16 ms (1)
+Sep 10 11:27:34 symfony [info] {sfWebResponse} Send content (35277 o)
+Sep 10 11:29:08 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:29:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:29:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:29:08 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:29:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:29:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:29:08 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:29:08 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:29:08 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:29:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:29:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:29:08 symfony [info] {sfWebDebugLogger} Configuration 12.85 ms (9)
+Sep 10 11:29:08 symfony [info] {sfWebDebugLogger} Factories 38.08 ms (1)
+Sep 10 11:29:08 symfony [info] {sfWebDebugLogger} Action "profesor/index" 74.67 ms (1)
+Sep 10 11:29:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:29:08 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 25.03 ms (1)
+Sep 10 11:29:08 symfony [info] {sfWebResponse} Send content (35277 o)
+Sep 10 11:31:52 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:31:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:31:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:31:52 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:31:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:31:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:31:52 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:31:52 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:31:52 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:31:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:31:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:31:52 symfony [info] {sfWebDebugLogger} Configuration 32.77 ms (10)
+Sep 10 11:31:52 symfony [info] {sfWebDebugLogger} Factories 40.24 ms (1)
+Sep 10 11:31:52 symfony [info] {sfWebDebugLogger} Action "profesor/index" 76.04 ms (1)
+Sep 10 11:31:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:31:52 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 45.69 ms (1)
+Sep 10 11:31:52 symfony [info] {sfWebResponse} Send content (35275 o)
+Sep 10 11:32:23 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/edit/id_profesor/3 with parameters array (  'module' => 'profesor',  'action' => 'edit',  'id_profesor' => '3',)
+Sep 10 11:32:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:32:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:32:23 symfony [info] {profesorActions} Call "profesorActions->executeEdit()"
+Sep 10 11:32:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:32:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (3)
+Sep 10 11:32:23 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/editSuccess.php"
+Sep 10 11:32:23 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 11:32:23 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:32:23 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:32:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:32:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:32:23 symfony [info] {sfWebDebugLogger} Configuration 12.03 ms (9)
+Sep 10 11:32:23 symfony [info] {sfWebDebugLogger} Factories 39.49 ms (1)
+Sep 10 11:32:23 symfony [info] {sfWebDebugLogger} Action "profesor/edit" 116.40 ms (1)
+Sep 10 11:32:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:32:23 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/edit" 26.07 ms (1)
+Sep 10 11:32:23 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 8.48 ms (1)
+Sep 10 11:32:23 symfony [info] {sfWebResponse} Send content (40241 o)
+Sep 10 11:32:26 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:32:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:32:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:32:26 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:32:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:32:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:32:26 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:32:26 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:32:26 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:32:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:32:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:32:26 symfony [info] {sfWebDebugLogger} Configuration 11.77 ms (9)
+Sep 10 11:32:26 symfony [info] {sfWebDebugLogger} Factories 42.44 ms (1)
+Sep 10 11:32:26 symfony [info] {sfWebDebugLogger} Action "profesor/index" 54.75 ms (1)
+Sep 10 11:32:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:32:26 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 26.85 ms (1)
+Sep 10 11:32:26 symfony [info] {sfWebResponse} Send content (35262 o)
+Sep 10 11:32:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/edit/id_profesor/2 with parameters array (  'module' => 'profesor',  'action' => 'edit',  'id_profesor' => '2',)
+Sep 10 11:32:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:32:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:32:33 symfony [info] {profesorActions} Call "profesorActions->executeEdit()"
+Sep 10 11:32:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:32:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (2)
+Sep 10 11:32:33 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/editSuccess.php"
+Sep 10 11:32:33 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 11:32:33 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:32:33 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:32:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:32:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:32:33 symfony [info] {sfWebDebugLogger} Configuration 10.56 ms (9)
+Sep 10 11:32:33 symfony [info] {sfWebDebugLogger} Factories 34.77 ms (1)
+Sep 10 11:32:33 symfony [info] {sfWebDebugLogger} Action "profesor/edit" 81.08 ms (1)
+Sep 10 11:32:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:32:33 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/edit" 24.20 ms (1)
+Sep 10 11:32:33 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 8.03 ms (1)
+Sep 10 11:32:33 symfony [info] {sfWebResponse} Send content (40241 o)
+Sep 10 11:32:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/update/id_profesor/2 with parameters array (  'module' => 'profesor',  'action' => 'update',  'id_profesor' => '2',)
+Sep 10 11:32:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:32:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:32:39 symfony [info] {profesorActions} Call "profesorActions->executeUpdate()"
+Sep 10 11:32:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:32:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (2)
+Sep 10 11:32:39 symfony [notice] {sfWebDebugLogger}  Notice at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 109 (Use of undefined constant array_keys - assumed 'array_keys')
+Sep 10 11:32:39 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 11:32:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM profesor p WHERE p.id_profesor = ? - (2)
+Sep 10 11:32:39 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 11:32:39 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 11:32:39 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 11:32:39 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 11:32:39 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 168 (Invalid argument supplied for foreach())
+Sep 10 11:32:39 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE profesor SET nombre = ? WHERE id_profesor = ? - (Nayelli, 2)
+Sep 10 11:32:39 symfony [info] {sfFrontWebController} Redirect to "http://localhost/escuela/web/frontend_dev.php/profesor/edit/id_profesor/2"
+Sep 10 11:32:39 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php:109))
+Sep 10 11:32:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Sep 10 11:32:39 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php:109))
+Sep 10 11:32:39 symfony [info] {sfWebResponse} Send header "Location: http://localhost/escuela/web/frontend_dev.php/profesor/edit/id_profesor/2"
+Sep 10 11:32:39 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php:109))
+Sep 10 11:32:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:32:39 symfony [info] {sfWebDebugLogger} Configuration 6.73 ms (8)
+Sep 10 11:32:39 symfony [info] {sfWebDebugLogger} Factories 29.04 ms (1)
+Sep 10 11:32:39 symfony [info] {sfWebDebugLogger} Action "profesor/update" 246.63 ms (1)
+Sep 10 11:32:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (4)
+Sep 10 11:32:39 symfony [info] {sfWebResponse} Send content (144 o)
+Sep 10 11:32:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/edit/id_profesor/2 with parameters array (  'module' => 'profesor',  'action' => 'edit',  'id_profesor' => '2',)
+Sep 10 11:32:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:32:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:32:40 symfony [info] {profesorActions} Call "profesorActions->executeEdit()"
+Sep 10 11:32:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:32:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (2)
+Sep 10 11:32:40 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/editSuccess.php"
+Sep 10 11:32:40 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 11:32:40 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:32:40 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:32:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:32:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:32:40 symfony [info] {sfWebDebugLogger} Configuration 8.49 ms (9)
+Sep 10 11:32:40 symfony [info] {sfWebDebugLogger} Factories 28.80 ms (1)
+Sep 10 11:32:40 symfony [info] {sfWebDebugLogger} Action "profesor/edit" 84.93 ms (1)
+Sep 10 11:32:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:32:40 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/edit" 22.21 ms (1)
+Sep 10 11:32:40 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 7.03 ms (1)
+Sep 10 11:32:40 symfony [info] {sfWebResponse} Send content (40156 o)
+Sep 10 11:32:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:32:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:32:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:32:45 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:32:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:32:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:32:45 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:32:45 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:32:45 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:32:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:32:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:32:45 symfony [info] {sfWebDebugLogger} Configuration 9.17 ms (9)
+Sep 10 11:32:45 symfony [info] {sfWebDebugLogger} Factories 30.74 ms (1)
+Sep 10 11:32:45 symfony [info] {sfWebDebugLogger} Action "profesor/index" 55.75 ms (1)
+Sep 10 11:32:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:32:45 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 20.66 ms (1)
+Sep 10 11:32:45 symfony [info] {sfWebResponse} Send content (35260 o)
+Sep 10 11:33:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/new with parameters array (  'module' => 'profesor',  'action' => 'new',)
+Sep 10 11:33:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:33:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:33:35 symfony [info] {profesorActions} Call "profesorActions->executeNew()"
+Sep 10 11:33:35 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/newSuccess.php"
+Sep 10 11:33:35 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 11:33:35 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:33:35 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:33:35 symfony [info] {sfWebDebugLogger} Configuration 11.31 ms (9)
+Sep 10 11:33:35 symfony [info] {sfWebDebugLogger} Factories 45.43 ms (1)
+Sep 10 11:33:35 symfony [info] {sfWebDebugLogger} Action "profesor/new" 41.86 ms (1)
+Sep 10 11:33:35 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/new" 28.16 ms (1)
+Sep 10 11:33:35 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 6.49 ms (1)
+Sep 10 11:33:35 symfony [info] {sfWebResponse} Send content (36163 o)
+Sep 10 11:33:38 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:33:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:33:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:33:38 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:33:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:33:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:33:38 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:33:38 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:33:38 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:33:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:33:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:33:38 symfony [info] {sfWebDebugLogger} Configuration 13.28 ms (9)
+Sep 10 11:33:38 symfony [info] {sfWebDebugLogger} Factories 39.35 ms (1)
+Sep 10 11:33:38 symfony [info] {sfWebDebugLogger} Action "profesor/index" 67.91 ms (1)
+Sep 10 11:33:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:33:38 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 19.03 ms (1)
+Sep 10 11:33:38 symfony [info] {sfWebResponse} Send content (35245 o)
+Sep 10 11:33:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/edit/id_profesor/1 with parameters array (  'module' => 'profesor',  'action' => 'edit',  'id_profesor' => '1',)
+Sep 10 11:33:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:33:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:33:40 symfony [info] {profesorActions} Call "profesorActions->executeEdit()"
+Sep 10 11:33:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:33:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (1)
+Sep 10 11:33:40 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/editSuccess.php"
+Sep 10 11:33:40 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 11:33:40 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:33:40 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:33:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:33:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:33:40 symfony [info] {sfWebDebugLogger} Configuration 11.25 ms (9)
+Sep 10 11:33:40 symfony [info] {sfWebDebugLogger} Factories 41.64 ms (1)
+Sep 10 11:33:40 symfony [info] {sfWebDebugLogger} Action "profesor/edit" 77.77 ms (1)
+Sep 10 11:33:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:33:40 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/edit" 22.76 ms (1)
+Sep 10 11:33:40 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 6.91 ms (1)
+Sep 10 11:33:40 symfony [info] {sfWebResponse} Send content (40247 o)
+Sep 10 11:33:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:33:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:33:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:33:55 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:33:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:33:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:33:55 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:33:55 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:33:55 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:33:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:33:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:33:55 symfony [info] {sfWebDebugLogger} Configuration 11.32 ms (9)
+Sep 10 11:33:55 symfony [info] {sfWebDebugLogger} Factories 39.71 ms (1)
+Sep 10 11:33:55 symfony [info] {sfWebDebugLogger} Action "profesor/index" 68.18 ms (1)
+Sep 10 11:33:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:33:55 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 22.52 ms (1)
+Sep 10 11:33:55 symfony [info] {sfWebResponse} Send content (35261 o)
+Sep 10 11:33:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 11:33:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:33:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:33:57 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 11:33:57 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 11:33:57 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:33:57 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:33:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:33:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:33:57 symfony [info] {sfWebDebugLogger} Configuration 28.58 ms (10)
+Sep 10 11:33:57 symfony [info] {sfWebDebugLogger} Factories 37.39 ms (1)
+Sep 10 11:33:57 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.12 ms (1)
+Sep 10 11:33:57 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 36.92 ms (1)
+Sep 10 11:33:57 symfony [info] {sfWebResponse} Send content (31482 o)
+Sep 10 11:34:00 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:34:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:34:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:34:00 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:34:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:34:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:34:00 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:34:00 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:34:00 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:34:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:34:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:34:00 symfony [info] {sfWebDebugLogger} Configuration 15.06 ms (9)
+Sep 10 11:34:00 symfony [info] {sfWebDebugLogger} Factories 45.61 ms (1)
+Sep 10 11:34:00 symfony [info] {sfWebDebugLogger} Action "profesor/index" 57.23 ms (1)
+Sep 10 11:34:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:34:00 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 22.56 ms (1)
+Sep 10 11:34:00 symfony [info] {sfWebResponse} Send content (35240 o)
+Sep 10 11:34:28 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:34:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:34:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:34:28 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:34:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:34:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:34:28 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:34:28 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:34:28 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:34:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:34:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:34:28 symfony [info] {sfWebDebugLogger} Configuration 30.87 ms (10)
+Sep 10 11:34:28 symfony [info] {sfWebDebugLogger} Factories 32.36 ms (1)
+Sep 10 11:34:28 symfony [info] {sfWebDebugLogger} Action "profesor/index" 67.06 ms (1)
+Sep 10 11:34:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:34:28 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 42.24 ms (1)
+Sep 10 11:34:28 symfony [info] {sfWebResponse} Send content (35276 o)
+Sep 10 11:38:14 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 11:38:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:38:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:38:14 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 11:38:14 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 11:38:14 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:38:14 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:38:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:38:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:38:14 symfony [info] {sfWebDebugLogger} Configuration 34.13 ms (10)
+Sep 10 11:38:14 symfony [info] {sfWebDebugLogger} Factories 43.70 ms (1)
+Sep 10 11:38:14 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.12 ms (1)
+Sep 10 11:38:14 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 41.68 ms (1)
+Sep 10 11:38:14 symfony [info] {sfWebResponse} Send content (31484 o)
+Sep 10 11:38:17 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:38:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:38:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:38:17 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:38:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:38:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:38:18 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:38:18 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:38:18 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:38:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:38:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:38:18 symfony [info] {sfWebDebugLogger} Configuration 13.00 ms (9)
+Sep 10 11:38:18 symfony [info] {sfWebDebugLogger} Factories 45.90 ms (1)
+Sep 10 11:38:18 symfony [info] {sfWebDebugLogger} Action "profesor/index" 75.96 ms (1)
+Sep 10 11:38:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:38:18 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 24.33 ms (1)
+Sep 10 11:38:18 symfony [info] {sfWebResponse} Send content (35242 o)
+Sep 10 11:38:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/new with parameters array (  'module' => 'profesor',  'action' => 'new',)
+Sep 10 11:38:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:38:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:38:22 symfony [info] {profesorActions} Call "profesorActions->executeNew()"
+Sep 10 11:38:22 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/newSuccess.php"
+Sep 10 11:38:22 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 11:38:22 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:38:22 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:38:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:38:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:38:22 symfony [info] {sfWebDebugLogger} Configuration 12.61 ms (9)
+Sep 10 11:38:22 symfony [info] {sfWebDebugLogger} Factories 44.21 ms (1)
+Sep 10 11:38:22 symfony [info] {sfWebDebugLogger} Action "profesor/new" 42.22 ms (1)
+Sep 10 11:38:22 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/new" 24.29 ms (1)
+Sep 10 11:38:22 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 7.35 ms (1)
+Sep 10 11:38:22 symfony [info] {sfWebResponse} Send content (36165 o)
+Sep 10 11:41:20 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/new with parameters array (  'module' => 'profesor',  'action' => 'new',)
+Sep 10 11:41:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:41:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:41:20 symfony [info] {profesorActions} Call "profesorActions->executeNew()"
+Sep 10 11:41:21 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/newSuccess.php"
+Sep 10 11:41:21 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 11:41:21 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:41:21 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:41:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:41:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:41:21 symfony [info] {sfWebDebugLogger} Configuration 22.60 ms (9)
+Sep 10 11:41:21 symfony [info] {sfWebDebugLogger} Factories 310.60 ms (1)
+Sep 10 11:41:21 symfony [info] {sfWebDebugLogger} Action "profesor/new" 310.69 ms (1)
+Sep 10 11:41:21 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/new" 213.53 ms (1)
+Sep 10 11:41:21 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 42.92 ms (1)
+Sep 10 11:41:21 symfony [info] {sfWebResponse} Send content (36217 o)
+Sep 10 11:41:57 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/new with parameters array (  'module' => 'profesor',  'action' => 'new',)
+Sep 10 11:41:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:41:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:41:57 symfony [info] {profesorActions} Call "profesorActions->executeNew()"
+Sep 10 11:41:57 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/newSuccess.php"
+Sep 10 11:41:57 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 11:41:57 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:41:57 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:41:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:41:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:41:57 symfony [info] {sfWebDebugLogger} Configuration 15.92 ms (9)
+Sep 10 11:41:57 symfony [info] {sfWebDebugLogger} Factories 50.59 ms (1)
+Sep 10 11:41:57 symfony [info] {sfWebDebugLogger} Action "profesor/new" 43.43 ms (1)
+Sep 10 11:41:57 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/new" 24.29 ms (1)
+Sep 10 11:41:57 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 6.44 ms (1)
+Sep 10 11:41:57 symfony [info] {sfWebResponse} Send content (36214 o)
+Sep 10 11:42:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/new with parameters array (  'module' => 'profesor',  'action' => 'new',)
+Sep 10 11:42:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:42:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:42:35 symfony [info] {profesorActions} Call "profesorActions->executeNew()"
+Sep 10 11:42:35 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/newSuccess.php"
+Sep 10 11:42:35 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 11:42:35 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:42:35 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:42:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:42:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:42:35 symfony [info] {sfWebDebugLogger} Configuration 15.76 ms (9)
+Sep 10 11:42:35 symfony [info] {sfWebDebugLogger} Factories 55.33 ms (1)
+Sep 10 11:42:35 symfony [info] {sfWebDebugLogger} Action "profesor/new" 59.55 ms (1)
+Sep 10 11:42:35 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/new" 28.58 ms (1)
+Sep 10 11:42:35 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 7.04 ms (1)
+Sep 10 11:42:35 symfony [info] {sfWebResponse} Send content (36224 o)
+Sep 10 11:42:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:42:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:42:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:42:39 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:42:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:42:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:42:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:42:39 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:42:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:42:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:42:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:42:39 symfony [info] {sfWebDebugLogger} Configuration 12.95 ms (9)
+Sep 10 11:42:39 symfony [info] {sfWebDebugLogger} Factories 65.98 ms (1)
+Sep 10 11:42:39 symfony [info] {sfWebDebugLogger} Action "profesor/index" 84.02 ms (1)
+Sep 10 11:42:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:42:39 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 25.86 ms (1)
+Sep 10 11:42:39 symfony [info] {sfWebResponse} Send content (35248 o)
+Sep 10 11:42:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:42:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:42:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:42:47 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:42:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:42:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:42:47 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:42:47 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:42:47 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:42:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:42:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:42:47 symfony [info] {sfWebDebugLogger} Configuration 12.79 ms (9)
+Sep 10 11:42:47 symfony [info] {sfWebDebugLogger} Factories 49.82 ms (1)
+Sep 10 11:42:47 symfony [info] {sfWebDebugLogger} Action "profesor/index" 58.03 ms (1)
+Sep 10 11:42:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:42:47 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 21.07 ms (1)
+Sep 10 11:42:47 symfony [info] {sfWebResponse} Send content (35243 o)
+Sep 10 11:42:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/edit/id_profesor/1 with parameters array (  'module' => 'profesor',  'action' => 'edit',  'id_profesor' => '1',)
+Sep 10 11:42:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:42:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:42:53 symfony [info] {profesorActions} Call "profesorActions->executeEdit()"
+Sep 10 11:42:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:42:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (1)
+Sep 10 11:42:53 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/editSuccess.php"
+Sep 10 11:42:53 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 11:42:53 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:42:53 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:42:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:42:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:42:53 symfony [info] {sfWebDebugLogger} Configuration 13.90 ms (9)
+Sep 10 11:42:53 symfony [info] {sfWebDebugLogger} Factories 45.62 ms (1)
+Sep 10 11:42:53 symfony [info] {sfWebDebugLogger} Action "profesor/edit" 180.88 ms (1)
+Sep 10 11:42:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:42:53 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/edit" 25.38 ms (1)
+Sep 10 11:42:53 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 8.76 ms (1)
+Sep 10 11:42:53 symfony [info] {sfWebResponse} Send content (40273 o)
+Sep 10 11:42:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:42:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:42:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:42:59 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:42:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:42:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:42:59 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:42:59 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:42:59 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:42:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:42:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:42:59 symfony [info] {sfWebDebugLogger} Configuration 13.26 ms (9)
+Sep 10 11:42:59 symfony [info] {sfWebDebugLogger} Factories 42.77 ms (1)
+Sep 10 11:42:59 symfony [info] {sfWebDebugLogger} Action "profesor/index" 66.62 ms (1)
+Sep 10 11:42:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:42:59 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 20.58 ms (1)
+Sep 10 11:42:59 symfony [info] {sfWebResponse} Send content (35262 o)
+Sep 10 11:43:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 11:43:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:43:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:43:01 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 11:43:01 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 11:43:01 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:43:01 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:43:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:43:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:43:01 symfony [info] {sfWebDebugLogger} Configuration 11.08 ms (9)
+Sep 10 11:43:01 symfony [info] {sfWebDebugLogger} Factories 44.69 ms (1)
+Sep 10 11:43:01 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.12 ms (1)
+Sep 10 11:43:01 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 16.39 ms (1)
+Sep 10 11:43:01 symfony [info] {sfWebResponse} Send content (31482 o)
+Sep 10 11:44:03 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:44:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:44:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:44:03 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:44:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:44:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:44:03 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:44:03 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:44:03 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:44:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:44:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:44:03 symfony [info] {sfWebDebugLogger} Configuration 10.15 ms (9)
+Sep 10 11:44:03 symfony [info] {sfWebDebugLogger} Factories 43.53 ms (1)
+Sep 10 11:44:03 symfony [info] {sfWebDebugLogger} Action "profesor/index" 89.37 ms (1)
+Sep 10 11:44:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:44:03 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 21.61 ms (1)
+Sep 10 11:44:03 symfony [info] {sfWebResponse} Send content (35241 o)
+Sep 10 11:44:28 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:44:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:44:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:44:28 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:44:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:44:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:44:28 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:44:28 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:44:28 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:44:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:44:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:44:28 symfony [info] {sfWebDebugLogger} Configuration 11.02 ms (9)
+Sep 10 11:44:28 symfony [info] {sfWebDebugLogger} Factories 38.87 ms (1)
+Sep 10 11:44:28 symfony [info] {sfWebDebugLogger} Action "profesor/index" 68.92 ms (1)
+Sep 10 11:44:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:44:28 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 21.61 ms (1)
+Sep 10 11:44:28 symfony [info] {sfWebResponse} Send content (35244 o)
+Sep 10 11:44:32 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 11:44:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:44:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:44:32 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 11:44:32 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 11:44:32 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:44:32 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:44:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:44:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:44:32 symfony [info] {sfWebDebugLogger} Configuration 10.83 ms (9)
+Sep 10 11:44:32 symfony [info] {sfWebDebugLogger} Factories 37.76 ms (1)
+Sep 10 11:44:32 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.16 ms (1)
+Sep 10 11:44:32 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 16.40 ms (1)
+Sep 10 11:44:33 symfony [info] {sfWebResponse} Send content (31482 o)
+Sep 10 11:44:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 11:44:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 11:44:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 11:44:56 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 11:44:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 11:44:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 11:44:56 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 11:44:56 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:44:56 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 11:44:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 11:44:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 11:44:56 symfony [info] {sfWebDebugLogger} Configuration 11.17 ms (9)
+Sep 10 11:44:56 symfony [info] {sfWebDebugLogger} Factories 38.92 ms (1)
+Sep 10 11:44:56 symfony [info] {sfWebDebugLogger} Action "profesor/index" 68.58 ms (1)
+Sep 10 11:44:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 11:44:56 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 18.23 ms (1)
+Sep 10 11:44:56 symfony [info] {sfWebResponse} Send content (35241 o)
+Sep 10 12:09:38 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 12:09:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:09:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:09:38 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 12:09:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:09:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 12:09:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 12:09:39 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:09:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:09:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:09:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:09:39 symfony [info] {sfWebDebugLogger} Configuration 60.99 ms (9)
+Sep 10 12:09:39 symfony [info] {sfWebDebugLogger} Factories 68.19 ms (1)
+Sep 10 12:09:39 symfony [info] {sfWebDebugLogger} Action "profesor/index" 89.33 ms (1)
+Sep 10 12:09:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:09:39 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 21.76 ms (1)
+Sep 10 12:09:39 symfony [info] {sfWebResponse} Send content (35368 o)
+Sep 10 12:09:41 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /materia with parameters array (  'module' => 'materia',  'action' => 'index',)
+Sep 10 12:09:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:09:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:09:41 symfony [info] {materiaActions} Call "materiaActions->executeIndex()"
+Sep 10 12:09:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:09:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id_materia AS m__id_materia, m.nombre AS m__nombre, m.cantidad_unidades AS m__cantidad_unidades FROM materia m - ()
+Sep 10 12:09:41 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/materia/templates/indexSuccess.php"
+Sep 10 12:09:41 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:09:41 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:09:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:09:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:09:41 symfony [info] {sfWebDebugLogger} Configuration 34.43 ms (10)
+Sep 10 12:09:41 symfony [info] {sfWebDebugLogger} Factories 35.96 ms (1)
+Sep 10 12:09:41 symfony [info] {sfWebDebugLogger} Action "materia/index" 217.25 ms (1)
+Sep 10 12:09:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Sep 10 12:09:41 symfony [info] {sfWebDebugLogger} View "Success" for "materia/index" 61.31 ms (1)
+Sep 10 12:09:41 symfony [info] {sfWebResponse} Send content (34717 o)
+Sep 10 12:09:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'alumno',  'action' => 'index',)
+Sep 10 12:09:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:09:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:09:44 symfony [info] {alumnoActions} Call "alumnoActions->executeIndex()"
+Sep 10 12:09:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:09:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT a.id_alumno AS a__id_alumno, a.nombre AS a__nombre, a.ap_paterno AS a__ap_paterno, a.ap_materno AS a__ap_materno, a.n_lista AS a__n_lista, a.id_grupo AS a__id_grupo FROM alumno a - ()
+Sep 10 12:09:45 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/alumno/templates/indexSuccess.php"
+Sep 10 12:09:45 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:09:45 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:09:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:09:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:09:45 symfony [info] {sfWebDebugLogger} Configuration 38.01 ms (10)
+Sep 10 12:09:45 symfony [info] {sfWebDebugLogger} Factories 41.73 ms (1)
+Sep 10 12:09:45 symfony [info] {sfWebDebugLogger} Action "alumno/index" 174.67 ms (1)
+Sep 10 12:09:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Sep 10 12:09:45 symfony [info] {sfWebDebugLogger} View "Success" for "alumno/index" 101.76 ms (1)
+Sep 10 12:09:45 symfony [info] {sfWebResponse} Send content (34635 o)
+Sep 10 12:09:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /grupos with parameters array (  'module' => 'grupos',  'action' => 'index',)
+Sep 10 12:09:47 symfony [info] {sfFrontWebController} Action "grupos/index" does not exist
+Sep 10 12:09:47 symfony [err] {sfError404Exception} Action "grupos/index" does not exist.
+Sep 10 12:09:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 10 12:09:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:09:47 symfony [info] {sfWebDebugLogger} Configuration 6.96 ms (5)
+Sep 10 12:09:47 symfony [info] {sfWebDebugLogger} Factories 41.42 ms (1)
+Sep 10 12:09:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /grupos with parameters array (  'module' => 'grupos',  'action' => 'index',)
+Sep 10 12:09:56 symfony [info] {sfFrontWebController} Action "grupos/index" does not exist
+Sep 10 12:09:56 symfony [err] {sfError404Exception} Action "grupos/index" does not exist.
+Sep 10 12:09:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 10 12:09:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:09:56 symfony [info] {sfWebDebugLogger} Configuration 6.61 ms (5)
+Sep 10 12:09:56 symfony [info] {sfWebDebugLogger} Factories 78.45 ms (1)
+Sep 10 12:10:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /grupos with parameters array (  'module' => 'grupos',  'action' => 'index',)
+Sep 10 12:10:01 symfony [info] {sfFrontWebController} Action "grupos/index" does not exist
+Sep 10 12:10:01 symfony [err] {sfError404Exception} Action "grupos/index" does not exist.
+Sep 10 12:10:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 10 12:10:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:10:01 symfony [info] {sfWebDebugLogger} Configuration 6.71 ms (5)
+Sep 10 12:10:01 symfony [info] {sfWebDebugLogger} Factories 41.50 ms (1)
+Sep 10 12:10:07 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'alumno',  'action' => 'index',)
+Sep 10 12:10:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:10:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:10:07 symfony [info] {alumnoActions} Call "alumnoActions->executeIndex()"
+Sep 10 12:10:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:10:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT a.id_alumno AS a__id_alumno, a.nombre AS a__nombre, a.ap_paterno AS a__ap_paterno, a.ap_materno AS a__ap_materno, a.n_lista AS a__n_lista, a.id_grupo AS a__id_grupo FROM alumno a - ()
+Sep 10 12:10:07 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/alumno/templates/indexSuccess.php"
+Sep 10 12:10:07 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:10:07 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:10:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:10:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:10:08 symfony [info] {sfWebDebugLogger} Configuration 14.43 ms (9)
+Sep 10 12:10:08 symfony [info] {sfWebDebugLogger} Factories 38.56 ms (1)
+Sep 10 12:10:08 symfony [info] {sfWebDebugLogger} Action "alumno/index" 67.74 ms (1)
+Sep 10 12:10:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:10:08 symfony [info] {sfWebDebugLogger} View "Success" for "alumno/index" 16.72 ms (1)
+Sep 10 12:10:08 symfony [info] {sfWebResponse} Send content (34663 o)
+Sep 10 12:10:12 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /grupo with parameters array (  'module' => 'grupo',  'action' => 'index',)
+Sep 10 12:10:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:10:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:10:12 symfony [info] {grupoActions} Call "grupoActions->executeIndex()"
+Sep 10 12:10:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:10:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT g.id_grupo AS g__id_grupo FROM grupo g - ()
+Sep 10 12:10:12 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/grupo/templates/indexSuccess.php"
+Sep 10 12:10:12 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:10:12 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:10:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:10:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:10:12 symfony [info] {sfWebDebugLogger} Configuration 36.79 ms (10)
+Sep 10 12:10:12 symfony [info] {sfWebDebugLogger} Factories 50.80 ms (1)
+Sep 10 12:10:12 symfony [info] {sfWebDebugLogger} Action "grupo/index" 119.93 ms (1)
+Sep 10 12:10:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:10:12 symfony [info] {sfWebDebugLogger} View "Success" for "grupo/index" 62.19 ms (1)
+Sep 10 12:10:12 symfony [info] {sfWebResponse} Send content (33846 o)
+Sep 10 12:10:19 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 12:10:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:10:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:10:19 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 12:10:19 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 12:10:19 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:10:19 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:10:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:10:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:10:19 symfony [info] {sfWebDebugLogger} Configuration 12.82 ms (9)
+Sep 10 12:10:19 symfony [info] {sfWebDebugLogger} Factories 43.42 ms (1)
+Sep 10 12:10:19 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.11 ms (1)
+Sep 10 12:10:19 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 52.14 ms (1)
+Sep 10 12:10:19 symfony [info] {sfWebResponse} Send content (31572 o)
+Sep 10 12:10:22 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 12:10:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:10:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:10:22 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 12:10:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:10:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 12:10:22 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 12:10:22 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:10:22 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:10:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:10:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:10:22 symfony [info] {sfWebDebugLogger} Configuration 11.82 ms (9)
+Sep 10 12:10:22 symfony [info] {sfWebDebugLogger} Factories 40.95 ms (1)
+Sep 10 12:10:22 symfony [info] {sfWebDebugLogger} Action "profesor/index" 64.49 ms (1)
+Sep 10 12:10:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:10:22 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 20.59 ms (1)
+Sep 10 12:10:22 symfony [info] {sfWebResponse} Send content (35335 o)
+Sep 10 12:11:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /materia with parameters array (  'module' => 'materia',  'action' => 'index',)
+Sep 10 12:11:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:11:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:11:11 symfony [info] {materiaActions} Call "materiaActions->executeIndex()"
+Sep 10 12:11:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:11:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id_materia AS m__id_materia, m.nombre AS m__nombre, m.cantidad_unidades AS m__cantidad_unidades FROM materia m - ()
+Sep 10 12:11:11 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/materia/templates/indexSuccess.php"
+Sep 10 12:11:11 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:11:11 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:11:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:11:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:11:11 symfony [info] {sfWebDebugLogger} Configuration 12.89 ms (9)
+Sep 10 12:11:11 symfony [info] {sfWebDebugLogger} Factories 47.96 ms (1)
+Sep 10 12:11:11 symfony [info] {sfWebDebugLogger} Action "materia/index" 85.32 ms (1)
+Sep 10 12:11:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:11:11 symfony [info] {sfWebDebugLogger} View "Success" for "materia/index" 21.60 ms (1)
+Sep 10 12:11:11 symfony [info] {sfWebResponse} Send content (34714 o)
+Sep 10 12:12:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /materia with parameters array (  'module' => 'materia',  'action' => 'index',)
+Sep 10 12:12:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:12:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:12:39 symfony [info] {materiaActions} Call "materiaActions->executeIndex()"
+Sep 10 12:12:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:12:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id_materia AS m__id_materia, m.nombre AS m__nombre, m.cantidad_unidades AS m__cantidad_unidades FROM materia m - ()
+Sep 10 12:12:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/materia/templates/indexSuccess.php"
+Sep 10 12:12:39 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:12:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:12:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:12:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:12:39 symfony [info] {sfWebDebugLogger} Configuration 20.79 ms (9)
+Sep 10 12:12:39 symfony [info] {sfWebDebugLogger} Factories 61.56 ms (1)
+Sep 10 12:12:39 symfony [info] {sfWebDebugLogger} Action "materia/index" 79.12 ms (1)
+Sep 10 12:12:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Sep 10 12:12:39 symfony [info] {sfWebDebugLogger} View "Success" for "materia/index" 22.57 ms (1)
+Sep 10 12:12:39 symfony [info] {sfWebResponse} Send content (35116 o)
+Sep 10 12:13:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /materia with parameters array (  'module' => 'materia',  'action' => 'index',)
+Sep 10 12:13:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:13:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:13:15 symfony [info] {materiaActions} Call "materiaActions->executeIndex()"
+Sep 10 12:13:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:13:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id_materia AS m__id_materia, m.nombre AS m__nombre, m.cantidad_unidades AS m__cantidad_unidades FROM materia m - ()
+Sep 10 12:13:15 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/materia/templates/indexSuccess.php"
+Sep 10 12:13:15 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:15 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:13:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:13:15 symfony [info] {sfWebDebugLogger} Configuration 14.81 ms (9)
+Sep 10 12:13:15 symfony [info] {sfWebDebugLogger} Factories 34.77 ms (1)
+Sep 10 12:13:15 symfony [info] {sfWebDebugLogger} Action "materia/index" 69.69 ms (1)
+Sep 10 12:13:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:13:15 symfony [info] {sfWebDebugLogger} View "Success" for "materia/index" 20.70 ms (1)
+Sep 10 12:13:15 symfony [info] {sfWebResponse} Send content (35095 o)
+Sep 10 12:13:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'alumno',  'action' => 'index',)
+Sep 10 12:13:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:13:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:13:21 symfony [info] {alumnoActions} Call "alumnoActions->executeIndex()"
+Sep 10 12:13:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:13:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT a.id_alumno AS a__id_alumno, a.nombre AS a__nombre, a.ap_paterno AS a__ap_paterno, a.ap_materno AS a__ap_materno, a.n_lista AS a__n_lista, a.id_grupo AS a__id_grupo FROM alumno a - ()
+Sep 10 12:13:21 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/alumno/templates/indexSuccess.php"
+Sep 10 12:13:21 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:21 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:13:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:13:21 symfony [info] {sfWebDebugLogger} Configuration 14.97 ms (9)
+Sep 10 12:13:21 symfony [info] {sfWebDebugLogger} Factories 52.55 ms (1)
+Sep 10 12:13:21 symfony [info] {sfWebDebugLogger} Action "alumno/index" 55.65 ms (1)
+Sep 10 12:13:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:13:21 symfony [info] {sfWebDebugLogger} View "Success" for "alumno/index" 15.03 ms (1)
+Sep 10 12:13:21 symfony [info] {sfWebResponse} Send content (35013 o)
+Sep 10 12:13:27 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /grupo with parameters array (  'module' => 'grupo',  'action' => 'index',)
+Sep 10 12:13:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:13:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:13:27 symfony [info] {grupoActions} Call "grupoActions->executeIndex()"
+Sep 10 12:13:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:13:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT g.id_grupo AS g__id_grupo FROM grupo g - ()
+Sep 10 12:13:27 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/grupo/templates/indexSuccess.php"
+Sep 10 12:13:27 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:27 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:13:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:13:27 symfony [info] {sfWebDebugLogger} Configuration 12.08 ms (9)
+Sep 10 12:13:27 symfony [info] {sfWebDebugLogger} Factories 39.22 ms (1)
+Sep 10 12:13:27 symfony [info] {sfWebDebugLogger} Action "grupo/index" 60.06 ms (1)
+Sep 10 12:13:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Sep 10 12:13:27 symfony [info] {sfWebDebugLogger} View "Success" for "grupo/index" 17.64 ms (1)
+Sep 10 12:13:27 symfony [info] {sfWebResponse} Send content (34223 o)
+Sep 10 12:13:33 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 12:13:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:13:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:13:33 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 12:13:33 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 12:13:33 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:33 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:13:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:13:33 symfony [info] {sfWebDebugLogger} Configuration 10.92 ms (9)
+Sep 10 12:13:33 symfony [info] {sfWebDebugLogger} Factories 33.10 ms (1)
+Sep 10 12:13:33 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.26 ms (1)
+Sep 10 12:13:33 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 16.49 ms (1)
+Sep 10 12:13:33 symfony [info] {sfWebResponse} Send content (31572 o)
+Sep 10 12:13:36 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 12:13:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:13:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:13:36 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 12:13:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:13:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 12:13:36 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 12:13:36 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:36 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:13:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:13:36 symfony [info] {sfWebDebugLogger} Configuration 10.12 ms (9)
+Sep 10 12:13:36 symfony [info] {sfWebDebugLogger} Factories 34.46 ms (1)
+Sep 10 12:13:36 symfony [info] {sfWebDebugLogger} Action "profesor/index" 53.96 ms (1)
+Sep 10 12:13:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:13:36 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 19.39 ms (1)
+Sep 10 12:13:36 symfony [info] {sfWebResponse} Send content (35335 o)
+Sep 10 12:13:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/edit/id_profesor/2 with parameters array (  'module' => 'profesor',  'action' => 'edit',  'id_profesor' => '2',)
+Sep 10 12:13:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:13:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:13:41 symfony [info] {profesorActions} Call "profesorActions->executeEdit()"
+Sep 10 12:13:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:13:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (2)
+Sep 10 12:13:41 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/editSuccess.php"
+Sep 10 12:13:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 12:13:41 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:41 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:13:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:13:41 symfony [info] {sfWebDebugLogger} Configuration 10.79 ms (9)
+Sep 10 12:13:41 symfony [info] {sfWebDebugLogger} Factories 34.59 ms (1)
+Sep 10 12:13:41 symfony [info] {sfWebDebugLogger} Action "profesor/edit" 214.81 ms (1)
+Sep 10 12:13:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:13:41 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/edit" 55.74 ms (1)
+Sep 10 12:13:41 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 32.54 ms (1)
+Sep 10 12:13:42 symfony [info] {sfWebResponse} Send content (40361 o)
+Sep 10 12:13:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/update/id_profesor/2 with parameters array (  'module' => 'profesor',  'action' => 'update',  'id_profesor' => '2',)
+Sep 10 12:13:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:13:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:13:46 symfony [info] {profesorActions} Call "profesorActions->executeUpdate()"
+Sep 10 12:13:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:13:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (2)
+Sep 10 12:13:46 symfony [notice] {sfWebDebugLogger}  Notice at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 109 (Use of undefined constant array_keys - assumed 'array_keys')
+Sep 10 12:13:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 12:13:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM profesor p WHERE p.id_profesor = ? - (2)
+Sep 10 12:13:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 12:13:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 12:13:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 12:13:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 12:13:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 168 (Invalid argument supplied for foreach())
+Sep 10 12:13:46 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE profesor SET ap_paterno = ? WHERE id_profesor = ? - (Hernandez, 2)
+Sep 10 12:13:46 symfony [info] {sfFrontWebController} Redirect to "http://localhost/escuela/web/frontend_dev.php/profesor/edit/id_profesor/2"
+Sep 10 12:13:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php:109))
+Sep 10 12:13:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Sep 10 12:13:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php:109))
+Sep 10 12:13:46 symfony [info] {sfWebResponse} Send header "Location: http://localhost/escuela/web/frontend_dev.php/profesor/edit/id_profesor/2"
+Sep 10 12:13:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php:109))
+Sep 10 12:13:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:13:46 symfony [info] {sfWebDebugLogger} Configuration 9.42 ms (8)
+Sep 10 12:13:46 symfony [info] {sfWebDebugLogger} Factories 33.41 ms (1)
+Sep 10 12:13:46 symfony [info] {sfWebDebugLogger} Action "profesor/update" 154.50 ms (1)
+Sep 10 12:13:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (4)
+Sep 10 12:13:46 symfony [info] {sfWebResponse} Send content (144 o)
+Sep 10 12:13:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/edit/id_profesor/2 with parameters array (  'module' => 'profesor',  'action' => 'edit',  'id_profesor' => '2',)
+Sep 10 12:13:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:13:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:13:47 symfony [info] {profesorActions} Call "profesorActions->executeEdit()"
+Sep 10 12:13:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:13:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (2)
+Sep 10 12:13:47 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/editSuccess.php"
+Sep 10 12:13:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 12:13:47 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:47 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:13:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:13:47 symfony [info] {sfWebDebugLogger} Configuration 9.97 ms (9)
+Sep 10 12:13:47 symfony [info] {sfWebDebugLogger} Factories 33.64 ms (1)
+Sep 10 12:13:47 symfony [info] {sfWebDebugLogger} Action "profesor/edit" 75.08 ms (1)
+Sep 10 12:13:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:13:47 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/edit" 22.83 ms (1)
+Sep 10 12:13:47 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 7.67 ms (1)
+Sep 10 12:13:47 symfony [info] {sfWebResponse} Send content (40277 o)
+Sep 10 12:13:49 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 12:13:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:13:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:13:49 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 12:13:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:13:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 12:13:49 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 12:13:49 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:49 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:13:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:13:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:13:49 symfony [info] {sfWebDebugLogger} Configuration 10.82 ms (9)
+Sep 10 12:13:49 symfony [info] {sfWebDebugLogger} Factories 34.12 ms (1)
+Sep 10 12:13:49 symfony [info] {sfWebDebugLogger} Action "profesor/index" 55.64 ms (1)
+Sep 10 12:13:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:13:49 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 19.78 ms (1)
+Sep 10 12:13:49 symfony [info] {sfWebResponse} Send content (35356 o)
+Sep 10 12:14:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/edit/id_profesor/1 with parameters array (  'module' => 'profesor',  'action' => 'edit',  'id_profesor' => '1',)
+Sep 10 12:14:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:14:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:14:08 symfony [info] {profesorActions} Call "profesorActions->executeEdit()"
+Sep 10 12:14:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:14:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (1)
+Sep 10 12:14:08 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/editSuccess.php"
+Sep 10 12:14:08 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 12:14:08 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:14:08 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:14:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:14:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:14:08 symfony [info] {sfWebDebugLogger} Configuration 11.60 ms (9)
+Sep 10 12:14:08 symfony [info] {sfWebDebugLogger} Factories 41.62 ms (1)
+Sep 10 12:14:08 symfony [info] {sfWebDebugLogger} Action "profesor/edit" 148.42 ms (1)
+Sep 10 12:14:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:14:08 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/edit" 63.14 ms (1)
+Sep 10 12:14:08 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 29.42 ms (1)
+Sep 10 12:14:08 symfony [info] {sfWebResponse} Send content (40369 o)
+Sep 10 12:14:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 12:14:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:14:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:14:15 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 12:14:15 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 12:14:15 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:14:15 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:14:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:14:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:14:15 symfony [info] {sfWebDebugLogger} Configuration 6.69 ms (9)
+Sep 10 12:14:15 symfony [info] {sfWebDebugLogger} Factories 29.09 ms (1)
+Sep 10 12:14:15 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.18 ms (1)
+Sep 10 12:14:15 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 15.90 ms (1)
+Sep 10 12:14:15 symfony [info] {sfWebResponse} Send content (31593 o)
+Sep 10 12:18:16 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 12:18:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:18:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:18:16 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 12:18:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:18:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 12:18:16 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 12:18:16 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:18:16 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:18:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:18:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:18:16 symfony [info] {sfWebDebugLogger} Configuration 16.55 ms (9)
+Sep 10 12:18:16 symfony [info] {sfWebDebugLogger} Factories 44.24 ms (1)
+Sep 10 12:18:16 symfony [info] {sfWebDebugLogger} Action "profesor/index" 68.74 ms (1)
+Sep 10 12:18:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:18:16 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 21.64 ms (1)
+Sep 10 12:18:16 symfony [info] {sfWebResponse} Send content (35335 o)
+Sep 10 12:18:20 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/new with parameters array (  'module' => 'profesor',  'action' => 'new',)
+Sep 10 12:18:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:18:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:18:20 symfony [info] {profesorActions} Call "profesorActions->executeNew()"
+Sep 10 12:18:20 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/newSuccess.php"
+Sep 10 12:18:20 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 12:18:20 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:18:20 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:18:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:18:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:18:20 symfony [info] {sfWebDebugLogger} Configuration 5.37 ms (9)
+Sep 10 12:18:20 symfony [info] {sfWebDebugLogger} Factories 38.82 ms (1)
+Sep 10 12:18:20 symfony [info] {sfWebDebugLogger} Action "profesor/new" 35.80 ms (1)
+Sep 10 12:18:20 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/new" 20.81 ms (1)
+Sep 10 12:18:20 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 5.14 ms (1)
+Sep 10 12:18:20 symfony [info] {sfWebResponse} Send content (36284 o)
+Sep 10 12:18:40 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 12:18:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:18:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:18:40 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 12:18:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:18:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 12:18:40 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 12:18:41 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:18:41 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:18:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:18:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:18:41 symfony [info] {sfWebDebugLogger} Configuration 7.24 ms (9)
+Sep 10 12:18:41 symfony [info] {sfWebDebugLogger} Factories 42.52 ms (1)
+Sep 10 12:18:41 symfony [info] {sfWebDebugLogger} Action "profesor/index" 53.08 ms (1)
+Sep 10 12:18:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:18:41 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 21.95 ms (1)
+Sep 10 12:18:41 symfony [info] {sfWebResponse} Send content (35340 o)
+Sep 10 12:18:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/new with parameters array (  'module' => 'profesor',  'action' => 'new',)
+Sep 10 12:18:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:18:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:18:53 symfony [info] {profesorActions} Call "profesorActions->executeNew()"
+Sep 10 12:18:53 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/newSuccess.php"
+Sep 10 12:18:53 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 12:18:53 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:18:53 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:18:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:18:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:18:53 symfony [info] {sfWebDebugLogger} Configuration 5.06 ms (9)
+Sep 10 12:18:53 symfony [info] {sfWebDebugLogger} Factories 31.09 ms (1)
+Sep 10 12:18:53 symfony [info] {sfWebDebugLogger} Action "profesor/new" 30.85 ms (1)
+Sep 10 12:18:53 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/new" 19.54 ms (1)
+Sep 10 12:18:53 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 5.34 ms (1)
+Sep 10 12:18:53 symfony [info] {sfWebResponse} Send content (36284 o)
+Sep 10 12:18:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /materia with parameters array (  'module' => 'materia',  'action' => 'index',)
+Sep 10 12:18:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:18:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:18:57 symfony [info] {materiaActions} Call "materiaActions->executeIndex()"
+Sep 10 12:18:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:18:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id_materia AS m__id_materia, m.nombre AS m__nombre, m.cantidad_unidades AS m__cantidad_unidades FROM materia m - ()
+Sep 10 12:18:57 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/materia/templates/indexSuccess.php"
+Sep 10 12:18:57 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:18:57 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:18:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:18:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:18:57 symfony [info] {sfWebDebugLogger} Configuration 6.20 ms (9)
+Sep 10 12:18:57 symfony [info] {sfWebDebugLogger} Factories 28.95 ms (1)
+Sep 10 12:18:57 symfony [info] {sfWebDebugLogger} Action "materia/index" 47.32 ms (1)
+Sep 10 12:18:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:18:57 symfony [info] {sfWebDebugLogger} View "Success" for "materia/index" 20.11 ms (1)
+Sep 10 12:18:57 symfony [info] {sfWebResponse} Send content (35099 o)
+Sep 10 12:19:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 12:19:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:19:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:19:13 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 12:19:13 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 12:19:13 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:19:13 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:19:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:19:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:19:13 symfony [info] {sfWebDebugLogger} Configuration 6.77 ms (9)
+Sep 10 12:19:13 symfony [info] {sfWebDebugLogger} Factories 29.46 ms (1)
+Sep 10 12:19:13 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.12 ms (1)
+Sep 10 12:19:13 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 14.74 ms (1)
+Sep 10 12:19:13 symfony [info] {sfWebResponse} Send content (31572 o)
+Sep 10 12:19:18 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 12:19:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:19:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:19:18 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 12:19:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:19:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 12:19:18 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 12:19:18 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:19:18 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:19:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:19:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:19:18 symfony [info] {sfWebDebugLogger} Configuration 5.13 ms (9)
+Sep 10 12:19:18 symfony [info] {sfWebDebugLogger} Factories 29.62 ms (1)
+Sep 10 12:19:18 symfony [info] {sfWebDebugLogger} Action "profesor/index" 66.35 ms (1)
+Sep 10 12:19:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:19:18 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 18.04 ms (1)
+Sep 10 12:19:18 symfony [info] {sfWebResponse} Send content (35334 o)
+Sep 10 12:19:21 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 12:19:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:19:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:19:21 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 12:19:21 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 12:19:21 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:19:21 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:19:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:19:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:19:21 symfony [info] {sfWebDebugLogger} Configuration 5.24 ms (9)
+Sep 10 12:19:21 symfony [info] {sfWebDebugLogger} Factories 29.24 ms (1)
+Sep 10 12:19:21 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.18 ms (1)
+Sep 10 12:19:21 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 11.98 ms (1)
+Sep 10 12:19:21 symfony [info] {sfWebResponse} Send content (31573 o)
+Sep 10 12:44:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 12:44:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:44:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:44:48 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 12:44:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 12:44:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 12:44:48 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 12:44:48 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:44:48 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:44:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:44:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:44:48 symfony [info] {sfWebDebugLogger} Configuration 15.05 ms (9)
+Sep 10 12:44:48 symfony [info] {sfWebDebugLogger} Factories 60.72 ms (1)
+Sep 10 12:44:48 symfony [info] {sfWebDebugLogger} Action "profesor/index" 87.53 ms (1)
+Sep 10 12:44:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 12:44:48 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 24.65 ms (1)
+Sep 10 12:44:48 symfony [info] {sfWebResponse} Send content (35334 o)
+Sep 10 12:44:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/new with parameters array (  'module' => 'profesor',  'action' => 'new',)
+Sep 10 12:44:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 12:44:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 12:44:51 symfony [info] {profesorActions} Call "profesorActions->executeNew()"
+Sep 10 12:44:51 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/newSuccess.php"
+Sep 10 12:44:51 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 12:44:51 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:44:51 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 12:44:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 12:44:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 12:44:51 symfony [info] {sfWebDebugLogger} Configuration 5.50 ms (9)
+Sep 10 12:44:51 symfony [info] {sfWebDebugLogger} Factories 29.82 ms (1)
+Sep 10 12:44:51 symfony [info] {sfWebDebugLogger} Action "profesor/new" 41.77 ms (1)
+Sep 10 12:44:51 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/new" 47.06 ms (1)
+Sep 10 12:44:51 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 32.28 ms (1)
+Sep 10 12:44:51 symfony [info] {sfWebResponse} Send content (36286 o)
+Sep 10 13:27:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /inicio with parameters array (  'module' => 'inicio',  'action' => 'index',)
+Sep 10 13:27:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 13:27:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 13:27:11 symfony [info] {inicioActions} Call "inicioActions->executeIndex()"
+Sep 10 13:27:11 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/inicio/templates/indexSuccess.php"
+Sep 10 13:27:11 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:27:11 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:27:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 13:27:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 13:27:11 symfony [info] {sfWebDebugLogger} Configuration 16.39 ms (9)
+Sep 10 13:27:11 symfony [info] {sfWebDebugLogger} Factories 99.39 ms (1)
+Sep 10 13:27:11 symfony [info] {sfWebDebugLogger} Action "inicio/index" 0.18 ms (1)
+Sep 10 13:27:11 symfony [info] {sfWebDebugLogger} View "Success" for "inicio/index" 36.85 ms (1)
+Sep 10 13:27:11 symfony [info] {sfWebResponse} Send content (31579 o)
+Sep 10 13:33:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 13:33:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 13:33:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 13:33:23 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 13:33:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 13:33:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 13:33:23 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 13:33:23 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:33:23 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:33:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 13:33:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 13:33:23 symfony [info] {sfWebDebugLogger} Configuration 13.61 ms (9)
+Sep 10 13:33:23 symfony [info] {sfWebDebugLogger} Factories 73.39 ms (1)
+Sep 10 13:33:23 symfony [info] {sfWebDebugLogger} Action "profesor/index" 69.81 ms (1)
+Sep 10 13:33:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 13:33:23 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 21.21 ms (1)
+Sep 10 13:33:23 symfony [info] {sfWebResponse} Send content (35334 o)
+Sep 10 13:33:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/edit/id_profesor/2 with parameters array (  'module' => 'profesor',  'action' => 'edit',  'id_profesor' => '2',)
+Sep 10 13:33:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 13:33:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 13:33:35 symfony [info] {profesorActions} Call "profesorActions->executeEdit()"
+Sep 10 13:33:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 13:33:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (2)
+Sep 10 13:33:35 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/editSuccess.php"
+Sep 10 13:33:35 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 13:33:35 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:33:35 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 13:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 13:33:35 symfony [info] {sfWebDebugLogger} Configuration 9.89 ms (9)
+Sep 10 13:33:35 symfony [info] {sfWebDebugLogger} Factories 32.68 ms (1)
+Sep 10 13:33:35 symfony [info] {sfWebDebugLogger} Action "profesor/edit" 235.25 ms (1)
+Sep 10 13:33:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Sep 10 13:33:35 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/edit" 24.29 ms (1)
+Sep 10 13:33:35 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 7.27 ms (1)
+Sep 10 13:33:35 symfony [info] {sfWebResponse} Send content (40358 o)
+Sep 10 13:34:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/update/id_profesor/2 with parameters array (  'module' => 'profesor',  'action' => 'update',  'id_profesor' => '2',)
+Sep 10 13:34:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 13:34:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 13:34:15 symfony [info] {profesorActions} Call "profesorActions->executeUpdate()"
+Sep 10 13:34:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 13:34:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (2)
+Sep 10 13:34:15 symfony [notice] {sfWebDebugLogger}  Notice at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 109 (Use of undefined constant array_keys - assumed 'array_keys')
+Sep 10 13:34:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 13:34:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM profesor p WHERE p.id_profesor = ? - (2)
+Sep 10 13:34:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 13:34:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 13:34:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 13:34:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 152 (array_search() expects parameter 2 to be array, integer given)
+Sep 10 13:34:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php on line 168 (Invalid argument supplied for foreach())
+Sep 10 13:34:15 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE profesor SET nombre = ? WHERE id_profesor = ? - (Nalleli, 2)
+Sep 10 13:34:15 symfony [info] {sfFrontWebController} Redirect to "http://localhost/escuela/web/frontend_dev.php/profesor/edit/id_profesor/2"
+Sep 10 13:34:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php:109))
+Sep 10 13:34:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Sep 10 13:34:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php:109))
+Sep 10 13:34:15 symfony [info] {sfWebResponse} Send header "Location: http://localhost/escuela/web/frontend_dev.php/profesor/edit/id_profesor/2"
+Sep 10 13:34:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\symfony-1.4.4\symfony-1.4.4\lib\validator\sfValidatorSchema.class.php:109))
+Sep 10 13:34:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 13:34:15 symfony [info] {sfWebDebugLogger} Configuration 4.85 ms (8)
+Sep 10 13:34:15 symfony [info] {sfWebDebugLogger} Factories 31.90 ms (1)
+Sep 10 13:34:15 symfony [info] {sfWebDebugLogger} Action "profesor/update" 206.05 ms (1)
+Sep 10 13:34:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (4)
+Sep 10 13:34:15 symfony [info] {sfWebResponse} Send content (144 o)
+Sep 10 13:34:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /profesor/edit/id_profesor/2 with parameters array (  'module' => 'profesor',  'action' => 'edit',  'id_profesor' => '2',)
+Sep 10 13:34:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 13:34:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 13:34:15 symfony [info] {profesorActions} Call "profesorActions->executeEdit()"
+Sep 10 13:34:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 13:34:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p WHERE (p.id_profesor = ?) LIMIT 1 - (2)
+Sep 10 13:34:15 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/editSuccess.php"
+Sep 10 13:34:15 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/_form.php"
+Sep 10 13:34:15 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:34:15 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:34:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 13:34:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 13:34:15 symfony [info] {sfWebDebugLogger} Configuration 5.49 ms (9)
+Sep 10 13:34:15 symfony [info] {sfWebDebugLogger} Factories 29.43 ms (1)
+Sep 10 13:34:15 symfony [info] {sfWebDebugLogger} Action "profesor/edit" 68.02 ms (1)
+Sep 10 13:34:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 13:34:15 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/edit" 24.32 ms (1)
+Sep 10 13:34:15 symfony [info] {sfWebDebugLogger} Partial "profesor/_form" 8.98 ms (1)
+Sep 10 13:34:15 symfony [info] {sfWebResponse} Send content (40277 o)
+Sep 10 13:34:19 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /profesor with parameters array (  'module' => 'profesor',  'action' => 'index',)
+Sep 10 13:34:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 13:34:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 13:34:19 symfony [info] {profesorActions} Call "profesorActions->executeIndex()"
+Sep 10 13:34:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 13:34:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_profesor AS p__id_profesor, p.nombre AS p__nombre, p.ap_paterno AS p__ap_paterno, p.ap_materno AS p__ap_materno FROM profesor p - ()
+Sep 10 13:34:19 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/profesor/templates/indexSuccess.php"
+Sep 10 13:34:19 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:34:19 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:34:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 13:34:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 13:34:19 symfony [info] {sfWebDebugLogger} Configuration 5.53 ms (9)
+Sep 10 13:34:19 symfony [info] {sfWebDebugLogger} Factories 29.29 ms (1)
+Sep 10 13:34:19 symfony [info] {sfWebDebugLogger} Action "profesor/index" 49.13 ms (1)
+Sep 10 13:34:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 13:34:19 symfony [info] {sfWebDebugLogger} View "Success" for "profesor/index" 17.45 ms (1)
+Sep 10 13:34:19 symfony [info] {sfWebResponse} Send content (35355 o)
+Sep 10 13:34:31 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /materia with parameters array (  'module' => 'materia',  'action' => 'index',)
+Sep 10 13:34:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 13:34:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 13:34:31 symfony [info] {materiaActions} Call "materiaActions->executeIndex()"
+Sep 10 13:34:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 13:34:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id_materia AS m__id_materia, m.nombre AS m__nombre, m.cantidad_unidades AS m__cantidad_unidades FROM materia m - ()
+Sep 10 13:34:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/materia/templates/indexSuccess.php"
+Sep 10 13:34:31 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:34:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:34:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 13:34:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 13:34:31 symfony [info] {sfWebDebugLogger} Configuration 7.37 ms (9)
+Sep 10 13:34:31 symfony [info] {sfWebDebugLogger} Factories 28.93 ms (1)
+Sep 10 13:34:31 symfony [info] {sfWebDebugLogger} Action "materia/index" 119.84 ms (1)
+Sep 10 13:34:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Sep 10 13:34:31 symfony [info] {sfWebDebugLogger} View "Success" for "materia/index" 55.71 ms (1)
+Sep 10 13:34:31 symfony [info] {sfWebResponse} Send content (35095 o)
+Sep 10 13:34:34 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /materia/new with parameters array (  'module' => 'materia',  'action' => 'new',)
+Sep 10 13:34:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 13:34:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 13:34:34 symfony [info] {materiaActions} Call "materiaActions->executeNew()"
+Sep 10 13:34:34 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/materia/templates/newSuccess.php"
+Sep 10 13:34:34 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\escuela\apps\frontend\modules/materia/templates/_form.php"
+Sep 10 13:34:34 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:34:34 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\escuela\apps\frontend\templates/layout.php"
+Sep 10 13:34:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 13:34:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 13:34:34 symfony [info] {sfWebDebugLogger} Configuration 6.43 ms (9)
+Sep 10 13:34:34 symfony [info] {sfWebDebugLogger} Factories 29.13 ms (1)
+Sep 10 13:34:34 symfony [info] {sfWebDebugLogger} Action "materia/new" 72.83 ms (1)
+Sep 10 13:34:34 symfony [info] {sfWebDebugLogger} View "Success" for "materia/new" 36.38 ms (1)
+Sep 10 13:34:34 symfony [info] {sfWebDebugLogger} Partial "materia/_form" 20.44 ms (1)
+Sep 10 13:34:34 symfony [info] {sfWebResponse} Send content (35668 o)

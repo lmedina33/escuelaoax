@@ -3,8 +3,9 @@
 
 prod:
   .settings:
-    no_script_name:         true
+    no_script_name:         false
     logging_enabled:        false
+    web_debug:              true
 
 dev:
   .settings:

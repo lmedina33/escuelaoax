@@ -10,32 +10,32 @@
       <tr>
         <td colspan="2">
           <?php echo $form->renderHiddenFields(false) ?>
-          &nbsp;<a href="<?php echo url_for('profesor/index') ?>">Back to list</a>
+          &nbsp;<a href="<?php echo url_for('profesor/index') ?>">Regresar a la lista</a>
           <?php if (!$form->getObject()->isNew()): ?>
-            &nbsp;<?php echo link_to('Delete', 'profesor/delete?id_profesor='.$form->getObject()->getIdProfesor(), array('method' => 'delete', 'confirm' => 'Are you sure?')) ?>
+            &nbsp;<?php echo link_to('Borrar', 'profesor/delete?id_profesor='.$form->getObject()->getIdProfesor(), array('method' => 'delete', 'confirm' => 'Are you sure?')) ?>
           <?php endif; ?>
-          <input type="submit" value="Save" />
+          <input type="submit" value="Guardar" />
         </td>
       </tr>
     </tfoot>
     <tbody>
       <?php echo $form->renderGlobalErrors() ?>
       <tr>
-        <th><?php echo $form['nombre']->renderLabel() ?></th>
+        <th><?php echo $form['nombre']->renderLabel('Nombre:') ?></th>
         <td>
           <?php echo $form['nombre']->renderError() ?>
           <?php echo $form['nombre'] ?>
         </td>
       </tr>
       <tr>
-        <th><?php echo $form['ap_paterno']->renderLabel() ?></th>
+        <th><?php echo $form['ap_paterno']->renderLabel('Apellido paterno:') ?></th>
         <td>
           <?php echo $form['ap_paterno']->renderError() ?>
           <?php echo $form['ap_paterno'] ?>
         </td>
       </tr>
       <tr>
-        <th><?php echo $form['ap_materno']->renderLabel() ?></th>
+        <th><?php echo $form['ap_materno']->renderLabel('Apellido materno:') ?></th>
         <td>
           <?php echo $form['ap_materno']->renderError() ?>
           <?php echo $form['ap_materno'] ?>
