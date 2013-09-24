@@ -10,23 +10,20 @@ Doctrine_Manager::getInstance()->bindComponent('Calificacion', 'doctrine');
  * @property integer $id_unidad
  * @property integer $numero_unidad
  * @property float $clasificacion
- * @property integer $asistencia
- * @property integer $fltas
+ * @property string $tipo
  * @property integer $alumno_profesor_materiaid_alumno_profesor_materia
  * @property AlumnoProfesorMateria $AlumnoProfesorMateria
  * 
  * @method integer               getIdUnidad()                                          Returns the current record's "id_unidad" value
  * @method integer               getNumeroUnidad()                                      Returns the current record's "numero_unidad" value
  * @method float                 getClasificacion()                                     Returns the current record's "clasificacion" value
- * @method integer               getAsistencia()                                        Returns the current record's "asistencia" value
- * @method integer               getFltas()                                             Returns the current record's "fltas" value
+ * @method string                getTipo()                                              Returns the current record's "tipo" value
  * @method integer               getAlumnoProfesorMateriaidAlumnoProfesorMateria()      Returns the current record's "alumno_profesor_materiaid_alumno_profesor_materia" value
  * @method AlumnoProfesorMateria getAlumnoProfesorMateria()                             Returns the current record's "AlumnoProfesorMateria" value
  * @method Calificacion          setIdUnidad()                                          Sets the current record's "id_unidad" value
  * @method Calificacion          setNumeroUnidad()                                      Sets the current record's "numero_unidad" value
  * @method Calificacion          setClasificacion()                                     Sets the current record's "clasificacion" value
- * @method Calificacion          setAsistencia()                                        Sets the current record's "asistencia" value
- * @method Calificacion          setFltas()                                             Sets the current record's "fltas" value
+ * @method Calificacion          setTipo()                                              Sets the current record's "tipo" value
  * @method Calificacion          setAlumnoProfesorMateriaidAlumnoProfesorMateria()      Sets the current record's "alumno_profesor_materiaid_alumno_profesor_materia" value
  * @method Calificacion          setAlumnoProfesorMateria()                             Sets the current record's "AlumnoProfesorMateria" value
  * 
@@ -57,32 +54,23 @@ abstract class BaseCalificacion extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
-        $this->hasColumn('clasificacion', 'float', null, array(
+        $this->hasColumn('clasificacion', 'float', 18, array(
              'type' => 'float',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => '',
+             'length' => 18,
              ));
-        $this->hasColumn('asistencia', 'integer', 4, array(
-             'type' => 'integer',
+        $this->hasColumn('tipo', 'string', 1, array(
+             'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => 4,
-             ));
-        $this->hasColumn('fltas', 'integer', 4, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => false,
-             'autoincrement' => false,
-             'length' => 4,
+             'length' => 1,
              ));
         $this->hasColumn('alumno_profesor_materiaid_alumno_profesor_materia', 'integer', 4, array(
              'type' => 'integer',

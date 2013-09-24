@@ -20,6 +20,14 @@
     </tfoot>
     <tbody>
       <?php echo $form->renderGlobalErrors() ?>
+        <tr>
+            <td><?php echo $form['semestre']->renderLabel()?></td>
+            <td><?php echo $form['semestre']?></td>
+        </tr>
+        <tr>
+            <td><?php echo $form['num_grupo']->renderLabel()?></td>
+            <td><?php echo $form['num_grupo']?></td>
+        </tr>
     </tbody>
   </table>
 </form>

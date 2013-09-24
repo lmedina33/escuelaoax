@@ -21,10 +21,10 @@
     <tbody>
       <?php echo $form->renderGlobalErrors() ?>
       <tr>
-        <th><?php echo $form['materiaid_materia']->renderLabel() ?></th>
+        <th><?php echo $form['materiaclave']->renderLabel() ?></th>
         <td>
-          <?php echo $form['materiaid_materia']->renderError() ?>
-          <?php echo $form['materiaid_materia'] ?>
+          <?php echo $form['materiaclave']->renderError() ?>
+          <?php echo $form['materiaclave'] ?>
         </td>
       </tr>
       <tr>
@@ -35,19 +35,13 @@
         </td>
       </tr>
       <tr>
-        <th><?php echo $form['anio']->renderLabel() ?></th>
+        <th><?php echo $form['grupoid_grupo']->renderLabel() ?></th>
         <td>
-          <?php echo $form['anio']->renderError() ?>
-          <?php echo $form['anio'] ?>
+          <?php echo $form['grupoid_grupo']->renderError() ?>
+          <?php echo $form['grupoid_grupo'] ?>
         </td>
       </tr>
-      <tr>
-        <th><?php echo $form['semestreid_semestre']->renderLabel() ?></th>
-        <td>
-          <?php echo $form['semestreid_semestre']->renderError() ?>
-          <?php echo $form['semestreid_semestre'] ?>
-        </td>
-      </tr>
+      
     </tbody>
   </table>
 </form>

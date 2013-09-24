@@ -15,11 +15,15 @@ abstract class BaseGrupoForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id_grupo' => new sfWidgetFormInputHidden(),
+      'id_grupo'  => new sfWidgetFormInputHidden(),
+      'semestre'  => new sfWidgetFormInputText(),
+      'num_grupo' => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
-      'id_grupo' => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id_grupo', 'required' => false)),
+      'id_grupo'  => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id_grupo', 'required' => false)),
+      'semestre'  => new sfValidatorInteger(array('required' => false)),
+      'num_grupo' => new sfValidatorInteger(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('grupo[%s]');

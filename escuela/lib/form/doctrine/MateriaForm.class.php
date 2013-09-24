@@ -12,5 +12,7 @@ class MateriaForm extends BaseMateriaForm
 {
   public function configure()
   {
+      $this->widgetSchema['clave']= new sfWidgetFormInputText();
+      $this->validatorSchema['clave']= new sfValidatorString();
   }
 }

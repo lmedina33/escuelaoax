@@ -15,15 +15,15 @@ abstract class BaseMateriaForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id_materia'        => new sfWidgetFormInputHidden(),
-      'nombre'            => new sfWidgetFormInputText(),
-      'cantidad_unidades' => new sfWidgetFormInputText(),
+      'clave'    => new sfWidgetFormInputHidden(),
+      'nombre'   => new sfWidgetFormInputText(),
+      'semestre' => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
-      'id_materia'        => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id_materia', 'required' => false)),
-      'nombre'            => new sfValidatorString(array('max_length' => 70, 'required' => false)),
-      'cantidad_unidades' => new sfValidatorInteger(array('required' => false)),
+      'clave'    => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'clave', 'required' => false)),
+      'nombre'   => new sfValidatorString(array('max_length' => 70, 'required' => false)),
+      'semestre' => new sfValidatorInteger(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('materia[%s]');

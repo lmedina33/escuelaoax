@@ -12,5 +12,8 @@
  */
 class Grupo extends BaseGrupo
 {
+    public function __toString() {
+        return ($this->getSemestre()*100)+$this->getNumGrupo();
+    }
 
 }

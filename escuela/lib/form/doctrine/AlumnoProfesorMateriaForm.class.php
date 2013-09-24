@@ -12,5 +12,6 @@ class AlumnoProfesorMateriaForm extends BaseAlumnoProfesorMateriaForm
 {
   public function configure()
   {
+      $this->widgetSchema['profesor_materiaid_profesor_materia']=new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ProfesorMateria'), 'add_empty' => false));
   }
 }
