@@ -15,12 +15,14 @@
   <thead>
     <tr>
       <th>Id grupo</th>
+      <th>grupo</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($grupos as $grupo): ?>
     <tr>
       <td><a href="<?php echo url_for('grupo/edit?id_grupo='.$grupo->getIdGrupo()) ?>"><?php echo $grupo->getIdGrupo() ?></a></td>
+      <td><?php echo ($grupo->getSemestre()*100)+$grupo->getNumGrupo()?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

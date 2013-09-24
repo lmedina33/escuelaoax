@@ -35,14 +35,14 @@ class materiaActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
-    $this->forward404Unless($materia = Doctrine::getTable('Materia')->find(array($request->getParameter('id_materia'))), sprintf('Object materia does not exist (%s).', $request->getParameter('id_materia')));
+    $this->forward404Unless($materia = Doctrine::getTable('Materia')->find(array($request->getParameter('clave'))), sprintf('Object materia does not exist (%s).', $request->getParameter('id_materia')));
     $this->form = new MateriaForm($materia);
   }
 
   public function executeUpdate(sfWebRequest $request)
   {
     $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
-    $this->forward404Unless($materia = Doctrine::getTable('Materia')->find(array($request->getParameter('id_materia'))), sprintf('Object materia does not exist (%s).', $request->getParameter('id_materia')));
+    $this->forward404Unless($materia = Doctrine::getTable('Materia')->find(array($request->getParameter('clave'))), sprintf('Object materia does not exist (%s).', $request->getParameter('id_materia')));
     $this->form = new MateriaForm($materia);
 
     $this->processForm($request, $this->form);
@@ -67,7 +67,7 @@ class materiaActions extends sfActions
     {
       $materia = $form->save();
 
-      $this->redirect('materia/edit?id_materia='.$materia->getIdMateria());
+      $this->redirect('materia/edit?clave='.$materia->getClave());
     }
   }
 }

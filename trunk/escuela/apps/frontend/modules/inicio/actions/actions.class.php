@@ -12,5 +12,6 @@ class inicioActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
+      $this->variablesGlobales= Doctrine_Core::getTable('VariablesGlobales')->createQuery('q')->execute();
   }
 }

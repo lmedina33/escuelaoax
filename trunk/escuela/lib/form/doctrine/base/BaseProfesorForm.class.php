@@ -15,17 +15,19 @@ abstract class BaseProfesorForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id_profesor' => new sfWidgetFormInputHidden(),
-      'nombre'      => new sfWidgetFormInputText(),
-      'ap_paterno'  => new sfWidgetFormInputText(),
-      'ap_materno'  => new sfWidgetFormInputText(),
+      'id_profesor'     => new sfWidgetFormInputHidden(),
+      'nombre'          => new sfWidgetFormInputText(),
+      'ap_paterno'      => new sfWidgetFormInputText(),
+      'ap_materno'      => new sfWidgetFormInputText(),
+      'cuentaid_cuenta' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Cuenta'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
-      'id_profesor' => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id_profesor', 'required' => false)),
-      'nombre'      => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'ap_paterno'  => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'ap_materno'  => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'id_profesor'     => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id_profesor', 'required' => false)),
+      'nombre'          => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'ap_paterno'      => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'ap_materno'      => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'cuentaid_cuenta' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Cuenta'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('profesor[%s]');

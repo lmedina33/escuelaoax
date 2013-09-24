@@ -16,14 +16,18 @@ abstract class BaseAlumnoProfesorMateriaForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id_alumno_profesor_materia'          => new sfWidgetFormInputHidden(),
-      'alumnoid_alumno'                     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Alumno'), 'add_empty' => false)),
+      'examen_semestral'                    => new sfWidgetFormInputText(),
+      'observaciones'                       => new sfWidgetFormInputText(),
       'profesor_materiaid_profesor_materia' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ProfesorMateria'), 'add_empty' => true)),
+      'alumnomatricula'                     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Alumno'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
       'id_alumno_profesor_materia'          => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id_alumno_profesor_materia', 'required' => false)),
-      'alumnoid_alumno'                     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Alumno'))),
+      'examen_semestral'                    => new sfValidatorNumber(array('required' => false)),
+      'observaciones'                       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'profesor_materiaid_profesor_materia' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ProfesorMateria'), 'required' => false)),
+      'alumnomatricula'                     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Alumno'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('alumno_profesor_materia[%s]');

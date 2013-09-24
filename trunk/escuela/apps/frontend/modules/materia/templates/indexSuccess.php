@@ -14,17 +14,17 @@
 <table id="tablaIndex" border="1">
   <thead>
     <tr>
-      <th>Id materia</th>
+      <th>clave</th>
       <th>Nombre</th>
-      <th>Cantidad unidades</th>
+      <th>Semestre</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($materias as $materia): ?>
     <tr>
-      <td><a href="<?php echo url_for('materia/edit?id_materia='.$materia->getIdMateria()) ?>"><?php echo $materia->getIdMateria() ?></a></td>
+      <td><a href="<?php echo url_for('materia/edit?clave='.$materia->getClave()) ?>"><?php echo $materia->getClave() ?></a></td>
       <td><?php echo $materia->getNombre() ?></td>
-      <td><?php echo $materia->getCantidadUnidades() ?></td>
+      <td><?php echo $materia->getSemestre()?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

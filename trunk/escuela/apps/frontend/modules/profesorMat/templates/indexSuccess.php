@@ -1,23 +1,23 @@
 <h1>Profesor materias List</h1>
 
-<table>
+<table border="1">
   <thead>
     <tr>
-      <th>Id profesor materia</th>
-      <th>Materiaid materia</th>
-      <th>Profesorid profesor</th>
-      <th>Anio</th>
-      <th>Semestreid semestre</th>
+      <th>Id</th>
+      <th>Materia</th>
+      <th>Profesor</th>
+      <th>Periodo</th>
+      <th>Grupo</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($profesor_materias as $profesor_materia): ?>
     <tr>
       <td><a href="<?php echo url_for('profesorMat/edit?id_profesor_materia='.$profesor_materia->getIdProfesorMateria()) ?>"><?php echo $profesor_materia->getIdProfesorMateria() ?></a></td>
-      <td><?php echo $profesor_materia->getMateriaidMateria() ?></td>
-      <td><?php echo $profesor_materia->getProfesoridProfesor() ?></td>
-      <td><?php echo $profesor_materia->getAnio() ?></td>
-      <td><?php echo $profesor_materia->getSemestreidSemestre() ?></td>
+      <td><?php echo $profesor_materia->getMateria() ?></td>
+      <td><?php echo $profesor_materia->getProfesor() ?></td>
+      <td><?php echo $profesor_materia->getPeriodo() ?></td>
+      <td><a href="<?php echo url_for('profesorMat/alumnoCurso?id='.$profesor_materia->getGrupoidGrupo())?>"><?php echo $profesor_materia->getGrupo()->__toString()?></a></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

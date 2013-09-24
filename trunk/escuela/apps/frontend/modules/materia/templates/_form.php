@@ -1,7 +1,7 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
 
-<form action="<?php echo url_for('materia/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id_materia='.$form->getObject()->getIdMateria() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
+<form action="<?php echo url_for('materia/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?clave='.$form->getObject()->getClave() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
 <?php if (!$form->getObject()->isNew()): ?>
 <input type="hidden" name="sf_method" value="put" />
 <?php endif; ?>
@@ -12,7 +12,7 @@
           <?php echo $form->renderHiddenFields(false) ?>
           &nbsp;<a href="<?php echo url_for('materia/index') ?>">Back to list</a>
           <?php if (!$form->getObject()->isNew()): ?>
-            &nbsp;<?php echo link_to('Delete', 'materia/delete?id_materia='.$form->getObject()->getIdMateria(), array('method' => 'delete', 'confirm' => 'Are you sure?')) ?>
+            &nbsp;<?php echo link_to('Delete', 'materia/delete?clave='.$form->getObject()->getClave(), array('method' => 'delete', 'confirm' => 'Are you sure?')) ?>
           <?php endif; ?>
           <input type="submit" value="Save" />
         </td>
@@ -20,6 +20,10 @@
     </tfoot>
     <tbody>
       <?php echo $form->renderGlobalErrors() ?>
+        <tr>
+            <th><?php echo $form['clave']->renderLabel()?></th>
+            <td><?php echo $form['clave']?></td>
+        </tr>
       <tr>
         <th><?php echo $form['nombre']->renderLabel() ?></th>
         <td>
@@ -28,10 +32,10 @@
         </td>
       </tr>
       <tr>
-        <th><?php echo $form['cantidad_unidades']->renderLabel() ?></th>
+        <th><?php echo $form['semestre']->renderLabel() ?></th>
         <td>
-          <?php echo $form['cantidad_unidades']->renderError() ?>
-          <?php echo $form['cantidad_unidades'] ?>
+          <?php echo $form['semestre']->renderError() ?>
+          <?php echo $form['semestre'] ?>
         </td>
       </tr>
     </tbody>

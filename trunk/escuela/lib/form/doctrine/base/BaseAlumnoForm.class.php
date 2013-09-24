@@ -15,20 +15,20 @@ abstract class BaseAlumnoForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id_alumno'  => new sfWidgetFormInputHidden(),
+      'matricula'  => new sfWidgetFormInputHidden(),
       'nombre'     => new sfWidgetFormInputText(),
       'ap_paterno' => new sfWidgetFormInputText(),
       'ap_materno' => new sfWidgetFormInputText(),
-      'n_lista'    => new sfWidgetFormInputText(),
+      'estatus'    => new sfWidgetFormInputText(),
       'id_grupo'   => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Grupo'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
-      'id_alumno'  => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id_alumno', 'required' => false)),
-      'nombre'     => new sfValidatorInteger(array('required' => false)),
+      'matricula'  => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'matricula', 'required' => false)),
+      'nombre'     => new sfValidatorString(array('max_length' => 80, 'required' => false)),
       'ap_paterno' => new sfValidatorString(array('max_length' => 50, 'required' => false)),
       'ap_materno' => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'n_lista'    => new sfValidatorInteger(array('required' => false)),
+      'estatus'    => new sfValidatorString(array('max_length' => 6, 'required' => false)),
       'id_grupo'   => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Grupo'), 'required' => false)),
     ));
 

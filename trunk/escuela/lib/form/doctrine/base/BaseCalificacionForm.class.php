@@ -18,8 +18,7 @@ abstract class BaseCalificacionForm extends BaseFormDoctrine
       'id_unidad'                                         => new sfWidgetFormInputHidden(),
       'numero_unidad'                                     => new sfWidgetFormInputText(),
       'clasificacion'                                     => new sfWidgetFormInputText(),
-      'asistencia'                                        => new sfWidgetFormInputText(),
-      'fltas'                                             => new sfWidgetFormInputText(),
+      'tipo'                                              => new sfWidgetFormInputText(),
       'alumno_profesor_materiaid_alumno_profesor_materia' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('AlumnoProfesorMateria'), 'add_empty' => true)),
     ));
 
@@ -27,8 +26,7 @@ abstract class BaseCalificacionForm extends BaseFormDoctrine
       'id_unidad'                                         => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id_unidad', 'required' => false)),
       'numero_unidad'                                     => new sfValidatorInteger(array('required' => false)),
       'clasificacion'                                     => new sfValidatorNumber(array('required' => false)),
-      'asistencia'                                        => new sfValidatorInteger(array('required' => false)),
-      'fltas'                                             => new sfValidatorInteger(array('required' => false)),
+      'tipo'                                              => new sfValidatorString(array('max_length' => 1, 'required' => false)),
       'alumno_profesor_materiaid_alumno_profesor_materia' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('AlumnoProfesorMateria'), 'required' => false)),
     ));
 

@@ -35,14 +35,14 @@ class alumnoActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
-    $this->forward404Unless($alumno = Doctrine::getTable('Alumno')->find(array($request->getParameter('id_alumno'))), sprintf('Object alumno does not exist (%s).', $request->getParameter('id_alumno')));
+    $this->forward404Unless($alumno = Doctrine::getTable('Alumno')->find(array($request->getParameter('matricula'))), sprintf('Object alumno does not exist (%s).', $request->getParameter('matricula')));
     $this->form = new AlumnoForm($alumno);
   }
 
   public function executeUpdate(sfWebRequest $request)
   {
     $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
-    $this->forward404Unless($alumno = Doctrine::getTable('Alumno')->find(array($request->getParameter('id_alumno'))), sprintf('Object alumno does not exist (%s).', $request->getParameter('id_alumno')));
+    $this->forward404Unless($alumno = Doctrine::getTable('Alumno')->find(array($request->getParameter('matricula'))), sprintf('Object alumno does not exist (%s).', $request->getParameter('matricula')));
     $this->form = new AlumnoForm($alumno);
 
     $this->processForm($request, $this->form);
@@ -54,7 +54,7 @@ class alumnoActions extends sfActions
   {
     $request->checkCSRFProtection();
 
-    $this->forward404Unless($alumno = Doctrine::getTable('Alumno')->find(array($request->getParameter('id_alumno'))), sprintf('Object alumno does not exist (%s).', $request->getParameter('id_alumno')));
+    $this->forward404Unless($alumno = Doctrine::getTable('Alumno')->find(array($request->getParameter('matricula'))), sprintf('Object alumno does not exist (%s).', $request->getParameter('matricula')));
     $alumno->delete();
 
     $this->redirect('alumno/index');
@@ -67,7 +67,7 @@ class alumnoActions extends sfActions
     {
       $alumno = $form->save();
 
-      $this->redirect('alumno/edit?id_alumno='.$alumno->getIdAlumno());
+      $this->redirect('alumno/edit?matricula='.$alumno->getMatricula());
     }
   }
 }

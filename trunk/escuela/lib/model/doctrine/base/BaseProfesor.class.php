@@ -11,17 +11,23 @@ Doctrine_Manager::getInstance()->bindComponent('Profesor', 'doctrine');
  * @property string $nombre
  * @property string $ap_paterno
  * @property string $ap_materno
+ * @property integer $cuentaid_cuenta
+ * @property Cuenta $Cuenta
  * @property Doctrine_Collection $ProfesorMateria
  * 
  * @method integer             getIdProfesor()      Returns the current record's "id_profesor" value
  * @method string              getNombre()          Returns the current record's "nombre" value
  * @method string              getApPaterno()       Returns the current record's "ap_paterno" value
  * @method string              getApMaterno()       Returns the current record's "ap_materno" value
+ * @method integer             getCuentaidCuenta()  Returns the current record's "cuentaid_cuenta" value
+ * @method Cuenta              getCuenta()          Returns the current record's "Cuenta" value
  * @method Doctrine_Collection getProfesorMateria() Returns the current record's "ProfesorMateria" collection
  * @method Profesor            setIdProfesor()      Sets the current record's "id_profesor" value
  * @method Profesor            setNombre()          Sets the current record's "nombre" value
  * @method Profesor            setApPaterno()       Sets the current record's "ap_paterno" value
  * @method Profesor            setApMaterno()       Sets the current record's "ap_materno" value
+ * @method Profesor            setCuentaidCuenta()  Sets the current record's "cuentaid_cuenta" value
+ * @method Profesor            setCuenta()          Sets the current record's "Cuenta" value
  * @method Profesor            setProfesorMateria() Sets the current record's "ProfesorMateria" collection
  * 
  * @package    escuela
@@ -69,11 +75,24 @@ abstract class BaseProfesor extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 50,
              ));
+        $this->hasColumn('cuentaid_cuenta', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 4,
+             ));
     }
 
     public function setUp()
     {
         parent::setUp();
+        $this->hasOne('Cuenta', array(
+             'local' => 'cuentaid_cuenta',
+             'foreign' => 'id_cuenta'));
+
         $this->hasMany('ProfesorMateria', array(
              'local' => 'id_profesor',
              'foreign' => 'profesorid_profesor'));

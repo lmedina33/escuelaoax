@@ -12,5 +12,7 @@
  */
 class ProfesorMateria extends BaseProfesorMateria
 {
-
+    function __toString() {
+        return $this->getMateria()." ".$this->getProfesor();
+    }
 }

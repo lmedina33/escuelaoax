@@ -12,5 +12,7 @@
  */
 class Alumno extends BaseAlumno
 {
-
+    public function __toString() {
+        return $this->getNombre()." ".$this->getApPaterno()." ".$this->getApMaterno();
+    }
 }

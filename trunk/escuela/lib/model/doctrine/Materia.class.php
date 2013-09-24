@@ -12,5 +12,7 @@
  */
 class Materia extends BaseMateria
 {
-
+    public function __toString() {
+        return $this->getNombre();
+    }
 }

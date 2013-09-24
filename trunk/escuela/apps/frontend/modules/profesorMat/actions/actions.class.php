@@ -10,6 +10,9 @@
  */
 class profesorMatActions extends sfActions
 {
+  public function executeAlumnoCurso(sfWebRequest $request){
+      $this->grupo= Doctrine_Core::getTable('Grupo')->find($request->getParameter('id'));
+  }
   public function executeIndex(sfWebRequest $request)
   {
     $this->profesor_materias = Doctrine::getTable('ProfesorMateria')
@@ -30,7 +33,7 @@ class profesorMatActions extends sfActions
 
     $this->processForm($request, $this->form);
 
-    $this->setTemplate('new');
+    //$this->setTemplate('new');
   }
 
   public function executeEdit(sfWebRequest $request)
@@ -62,7 +65,15 @@ class profesorMatActions extends sfActions
 
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
-    $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
+      $variablesGlobales=Doctrine_Core::getTable('VariablesGlobales')
+              ->createQuery('q')
+              ->execute();
+      
+    $campos=$request->getParameter($form->getName());
+    $this->logMessage($campos);
+    $campos['periodo']= date("Y")."-".$variablesGlobales[0]->getSemestreActual();
+    
+    $form->bind($campos, $request->getFiles($form->getName()));
     if ($form->isValid())
     {
       $profesor_materia = $form->save();

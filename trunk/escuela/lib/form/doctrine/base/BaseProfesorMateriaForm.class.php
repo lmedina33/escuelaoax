@@ -16,18 +16,18 @@ abstract class BaseProfesorMateriaForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id_profesor_materia' => new sfWidgetFormInputHidden(),
-      'materiaid_materia'   => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Materia'), 'add_empty' => false)),
+      'periodo'             => new sfWidgetFormInputText(),
       'profesorid_profesor' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Profesor'), 'add_empty' => false)),
-      'anio'                => new sfWidgetFormInputText(),
-      'semestreid_semestre' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Semestre'), 'add_empty' => true)),
+      'materiaclave'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Materia'), 'add_empty' => true)),
+      'grupoid_grupo'       => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Grupo'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
       'id_profesor_materia' => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id_profesor_materia', 'required' => false)),
-      'materiaid_materia'   => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Materia'))),
+      'periodo'             => new sfValidatorString(array('max_length' => 8, 'required' => false)),
       'profesorid_profesor' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Profesor'))),
-      'anio'                => new sfValidatorInteger(array('required' => false)),
-      'semestreid_semestre' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Semestre'), 'required' => false)),
+      'materiaclave'        => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Materia'), 'required' => false)),
+      'grupoid_grupo'       => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Grupo'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('profesor_materia[%s]');
