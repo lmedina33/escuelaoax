@@ -12,8 +12,9 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css,menu.css,tema_torres_bodet/jquery-ui-1.10.3.custom.min.css]
-  javascripts:    [jquery-1.4.4.min.js, jquery-ui-1.10.1.custom.min.js]
+  stylesheets:    [main.css]
+
+  javascripts:    []
 
   has_layout:     true
   layout:         layout
