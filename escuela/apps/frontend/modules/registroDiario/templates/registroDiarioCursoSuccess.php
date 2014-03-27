@@ -1,10 +1,40 @@
+<?php use_stylesheet("registroDiario.css");?>
 <script>
 $(document).ready(function(){
-    //poner el foco al primer checked button
-    $(".asistencia")[0].focus()
-    //tabs
-    $( "#tabs" ).tabs();
-    
+    $("#noTarea").hide()
+
+    $("#btnPasarLista").click(function(){
+            $("#pasarLista").show()
+            $("#noTarea").hide()
+    })
+    $("#btnNoTarea").click(function(){
+        $("#pasarLista").hide()
+        $("#noTarea").show()
+    })
+
+    //formularios emergentes
+    var formFaltasAcum=$("#formFaltasAcum").dialog({
+        title:"Faltas acumuladas en la unidad",
+        width: 400,
+        draggable: true,
+        resizable:false,
+        modal: true,
+        autoOpen: false,
+        //////EVENTOS/////////
+        open: function(event,ui){
+        },
+        close: function(event,ui){
+        },
+        hide: 'fade'
+     })
+     
+     $(".faltasAcum").click(function(){
+         $.get('<?php echo url_for("registroDiario/detallesFaltas")?>',{id:$(this).attr("idalumcurso")},function(resp){
+             $("#formFaltasAcum").html(resp)
+             formFaltasAcum.dialog("open")
+         })
+     })
+
     
     //confirmar pase de lista
     $("#confirmarPasLista").click(function(){
@@ -16,12 +46,16 @@ $(document).ready(function(){
                 faltaAlumno.push($(this).attr("idalumcurso"))
             });
         console.log(faltaAlumno)
-        $.get('<?php echo url_for('registroDiario/pasarLista')?>',{faltaAlumno:faltaAlumno},function(){
+        $.get('<?php echo url_for('registroDiario/pasarLista')?>',{faltaAlumno:faltaAlumno},function(resp){
+            for(var i=0;i<faltaAlumno.length;i++){
+                var faltasAcum=parseInt($(".faltasAcum[idAlumCurso="+faltaAlumno[i]+"]").text())
+                $(".faltasAcum[idAlumCurso="+faltaAlumno[i]+"]").text(faltasAcum+1)
+            }
             alert("se a registrado el pase de lista")
         })
     })
     
-    //confirmar adeudo de tareas
+    //confirmar tareas no realizadas
     $("#confirmarIncumplimientos").click(function(){
         var incumplimientoAlumno= Array()
         
@@ -39,14 +73,36 @@ $(document).ready(function(){
     
 })
 </script>
-<h1>Grupo <?php //echo $grupo->__toString() ?></h1>
-<div id="tabs">
-    <ul>
-        <li><a href="#tabs-1">Pase de lista</a></li>
-        <li><a href="#tabs-2">Registro de incumplimiento de tareas</a></li>
-    </ul>
-    <div id="tabs-1">
-        <table border="1">
+
+<!--Formularios emergentes-->
+<div id="formFaltasAcum"></div>
+<!--Fin formularios emergentes-->
+
+<div id="cabecera">
+    <table>
+        <tr>
+            <td colspan="5"><h1>Registro Diario</h1></td>
+        </tr>
+        <tr>
+            <th><h3>GRUPO:</h3></th><td><?php echo $curso->getGrupo()->__toString()?></td>
+            <td style="width: 20%"></td>
+            <th><h3>MATERIA:</h3></th><td><?php echo $curso->getMateria()?></td>
+        </tr>
+    </table>
+
+    <input type="hidden" id="idCurso" value="<?php echo $curso->getIdProfesorMateria() ?>">
+</div>
+<div id="botones">
+    <button class="btn" id="btnPasarLista" title="Pase de lista">
+        <div id="imgPasarLista"></div>
+    </button>
+    <button class="btn" id="btnNoTarea" title="Registrar incumplimiento de tareas">
+        <div id="imgNoTarea"></div>
+    </button>
+</div>
+<div id="contenedorListas">
+    <div id="pasarLista">
+        <table class="tabla1">
             <thead>
                 <tr>
                     <th>N° lista</th>
@@ -58,17 +114,17 @@ $(document).ready(function(){
             <tbody>
                 <?php $cont=1;?>
                 <?php foreach($alumnos as $alumno ):?>
-                <tr>
-                    <td><?php echo $cont;$cont++?></td>
+                <tr class="<?php if($cont%2==0){ echo 'tr2';} else{ echo 'tr1';}?>">
+                    <td class="tdCentrado"><?php echo $cont;$cont++?></td>
                     <td><?php echo $alumno['alumno']?></td>
-                    <td>
+                    <td class="tdCentrado">
                         <?php if($alumno["faltas_uni"]==0):?>
                         <?php echo $alumno["faltas_uni"]?>
                         <?php else:?>
-                        <a href=<?php echo url_for("registroDiario/detallesFaltas?id=".$alumno["idAlumProfMat"])?>><?php echo $alumno["faltas_uni"]?></a>
+                        <label class="faltasAcum detalles" idAlumCurso="<?php echo $alumno["idAlumProfMat"]?>" ><?php echo $alumno["faltas_uni"]?></label>
                         <?php endif;?>
                     </td>
-                    <td><input type="checkbox" class="asistencia" idAlumCurso="<?php echo $alumno["idAlumProfMat"]?>"></td>
+                    <td class="tdCentrado"><input type="checkbox" class="asistencia" idAlumCurso="<?php echo $alumno["idAlumProfMat"]?>"></td>
                 </tr>
                 <?php endforeach;?>
             </tbody>
@@ -76,8 +132,14 @@ $(document).ready(function(){
         </table>
         <input type="button" value="Confirmar Pase de lista" id="confirmarPasLista">
     </div>
-    <div id="tabs-2">
-        <table border="1">
+    <div id="noTarea">
+        <table id="descNoTarea">
+            <tr>
+                <th>Descripcion de la tarea no entregada:</th>
+                <td><textarea cols="50" id="descripcion"></textarea></td>
+            </tr>
+        </table>
+        <table class="tabla1">
             <thead>
                 <tr>
                     <th>N° lista</th>
@@ -89,30 +151,22 @@ $(document).ready(function(){
             <tbody>
                 <?php $cont=1;?>
                 <?php foreach($alumnos as $alumno ):?>
-                <tr>
-                    <td><?php echo $cont;$cont++?></td>
+                <tr class="<?php if($cont%2==0){ echo 'tr2';} else{ echo 'tr1';}?>">
+                    <td class="tdCentrado"><?php echo $cont;$cont++?></td>
                     <td><?php echo $alumno['alumno']?></td>
-                    <td>
+                    <td class="tdCentrado">
                         <?php if($alumno["no_tareas_uni"]==0):?>
                         <?php echo $alumno["no_tareas_uni"]?>
                         <?php else:?>
-                        <a href=<?php echo url_for("registroDiario/detallesNoTareas?id=".$alumno["idAlumProfMat"])?>><?php echo $alumno["no_tareas_uni"]?></a>
+                        <a idAlumCurso="<?php echo $alumno["idAlumProfMat"]?>" href=<?php echo url_for("registroDiario/detallesNoTareas?id=".$alumno["idAlumProfMat"])?>><?php echo $alumno["no_tareas_uni"]?></a>
                         <?php endif;?>
                     </td>
-                    <td><input type="checkbox" class="noTarea" idAlumCurso="<?php echo $alumno["idAlumProfMat"]?>"></td>
+                    <td class="tdCentrado"><input type="checkbox" class="noTarea" idAlumCurso="<?php echo $alumno["idAlumProfMat"]?>"></td>
                 </tr>
                 <?php endforeach;?>
             </tbody>
 
         </table>
-        <div>
-            <table>
-                <tr>
-                    <th>Descripcion de la tarea no entregada:</th>
-                    <td><textarea cols="50" id="descripcion"></textarea></td>
-                </tr>
-            </table>
-        </div>
-        <input type="button" value="Confirmar Icumplimientos" id="confirmarIncumplimientos">
+        <input type="button" value="Confirmar Incumplimientos" id="confirmarIncumplimientos">
     </div>
 </div>

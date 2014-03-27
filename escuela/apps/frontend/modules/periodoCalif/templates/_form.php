@@ -1,5 +1,11 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
+<script>
+$(document).ready(function(){
+   $("#variables_globales_eval_fecha_inicio").datepidcker();
+   
+})
+</script>
 
 <form action="<?php echo url_for('periodoCalif/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id='.$form->getObject()->getId() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
 <?php if (!$form->getObject()->isNew()): ?>

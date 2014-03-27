@@ -3,8 +3,8 @@
 <div id="contenedor">
     <div id="inicio">
         <div id="presentacion">
-            <div id="nombreSistema">Sistema Administrativo</div>
-            <div id="bienvenida"><b>Bienveni@:</b></div>
+            <div id="nombreSistema">Control de Calificaciones</div>
+            <div id="bienvenida"><b>Bienvenid@:</b></div>
             <div id="infoUsuario"><?php echo $sf_user->getAttribute('nombre') ?></div>
         </div>
         <div id="avisos">

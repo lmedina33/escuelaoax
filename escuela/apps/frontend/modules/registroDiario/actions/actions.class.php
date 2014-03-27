@@ -21,26 +21,26 @@ class registroDiarioActions extends sfActions
   public function executeRegistroDiarioCurso(sfWebRequest $request){
       $q=Doctrine_Manager::getInstance()->getCurrentConnection();
       $idProfesorCurso=$request->getParameter('id');
-      $curso=  Doctrine_Core::getTable('ProfesorMateria')->find($idProfesorCurso);
+      $this->curso=  Doctrine_Core::getTable('ProfesorMateria')->find($idProfesorCurso);
       //ordenar alumnos por apellido paterno, apellido materno, nombre
       $alumnos=$q->execute("select concat(ap_paterno,' ',ap_materno,' ',nombre) as alumno, matricula 
                     from alumno
-                    where id_grupo=".$curso->getGrupo()->getIdGrupo()." order by ap_paterno,ap_materno,nombre");
+                    where id_grupo=".$this->curso->getGrupo()->getIdGrupo()." order by ap_paterno,ap_materno,nombre");
       $this->alumnos=array();
       
       foreach ($alumnos as $alumno) {
-          $idalumnoProfMat=$q->execute("select id_alumno_profesor_materia from alumno_profesor_materia where alumnomatricula='".$alumno['matricula'].
-                  "' and profesor_materiaid_profesor_materia=".$idProfesorCurso);
+          $idalumnoProfMat=$q->execute("select id_alumno_profesor_materia from alumno_profesor_materia where matricula='".$alumno['matricula'].
+                  "' and id_profesor_materia=".$idProfesorCurso);
           $idalumnoProfMat=$idalumnoProfMat->fetch();
           //obtener faltas para este alumno
           $faltas_unidad=$q->execute("select count(fecha) as faltas
               from reg_faltas
-              where alumno_profesor_materiaid_alumno_profesor_materia =".$idalumnoProfMat['id_alumno_profesor_materia']);
+              where id_alumno_profesor_materia =".$idalumnoProfMat['id_alumno_profesor_materia']);
           $faltas_unidad=$faltas_unidad->fetch();
           //obtenerr tareas incumplidas
           $no_tareas_unidad=$q->execute("select count(fecha) as no_tareas_unidad
               from reg_tareas_no_realizadas
-              where alumno_profesor_materiaid_alumno_profesor_materia =".$idalumnoProfMat['id_alumno_profesor_materia']);
+              where id_alumno_profesor_materia =".$idalumnoProfMat['id_alumno_profesor_materia']);
           $no_tareas_unidad=$no_tareas_unidad->fetch();
           array_push($this->alumnos,
                   array(
@@ -55,7 +55,8 @@ class registroDiarioActions extends sfActions
       //$this->logMessage(print_r($this->alumnos));
   }
   public function executeDetallesFaltas(sfWebRequest $rquest){
-      $this->faltas=  Doctrine_Core::getTable('RegFaltas')->findByalumno_profesor_materiaid_alumno_profesor_materia($rquest->getParameter("id"));
+      $faltas=  Doctrine_Core::getTable('RegFaltas')->findByalumno_profesor_materiaid_alumno_profesor_materia($rquest->getParameter("id"));
+      return $this->renderPartial("detallesFaltas", array('faltas'=>$faltas));
   }
   public function executePasarLista(sfWebRequest $request){
       $faltasAlumnos=$request->getParameter("faltaAlumno");
@@ -69,6 +70,15 @@ class registroDiarioActions extends sfActions
           $faltaAlumno->save();
       }
       return $this->renderText("registro realizado correctamente");
+  }
+  public function executeValidarPaseLista(sfWebRequest $request){
+      $curso=Doctrine_Core::getTable('ProfesorMateria')->find($request->getParameter('id'));
+      $alumnos= $cusro->getAlumnoProfesorMateria();
+      foreach ($alumnos as $alumno){
+          if(count($alumno->getRegFaltas())>0){
+              return $this->renderText("true");
+          }
+      }
   }
   public function executeDetallesNoTareas(sfWebRequest $request){
       $this->noTareas=  Doctrine_Core::getTable('RegTareasNoRealizadas')->findByalumno_profesor_materiaid_alumno_profesor_materia($request->getParameter("id"));

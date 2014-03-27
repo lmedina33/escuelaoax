@@ -15,6 +15,7 @@ class periodoCalifActions extends sfActions
     $this->variables_globaless = Doctrine::getTable('VariablesGlobales')
       ->createQuery('a')
       ->execute();
+
   }
 
   public function executeNew(sfWebRequest $request)
