@@ -12,5 +12,7 @@ class VariablesGlobalesForm extends BaseVariablesGlobalesForm
 {
   public function configure()
   {
+      $this->widgetSchema['eval_fecha_inicio']=new sfWidgetFormInput();
+      $this->widgetSchema['eval_fecha_fin']= new sfWidgetFormInput();
   }
 }

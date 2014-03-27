@@ -28,6 +28,7 @@
   padding: 0px 25px;
   text-align: center;
   text-decoration: none;
+  -moz-boder-radius:15px;
 }
 #cssmenu > ul > li > a {
   color: #cccccc;

@@ -11,21 +11,21 @@ Doctrine_Manager::getInstance()->bindComponent('RegTareasNoRealizadas', 'doctrin
  * @property date $fecha
  * @property string $descripcion
  * @property integer $num_unidad
- * @property integer $alumno_profesor_materiaid_alumno_profesor_materia
+ * @property integer $id_alumno_profesor_materia
  * @property AlumnoProfesorMateria $AlumnoProfesorMateria
  * 
- * @method integer               getId()                                                Returns the current record's "id" value
- * @method date                  getFecha()                                             Returns the current record's "fecha" value
- * @method string                getDescripcion()                                       Returns the current record's "descripcion" value
- * @method integer               getNumUnidad()                                         Returns the current record's "num_unidad" value
- * @method integer               getAlumnoProfesorMateriaidAlumnoProfesorMateria()      Returns the current record's "alumno_profesor_materiaid_alumno_profesor_materia" value
- * @method AlumnoProfesorMateria getAlumnoProfesorMateria()                             Returns the current record's "AlumnoProfesorMateria" value
- * @method RegTareasNoRealizadas setId()                                                Sets the current record's "id" value
- * @method RegTareasNoRealizadas setFecha()                                             Sets the current record's "fecha" value
- * @method RegTareasNoRealizadas setDescripcion()                                       Sets the current record's "descripcion" value
- * @method RegTareasNoRealizadas setNumUnidad()                                         Sets the current record's "num_unidad" value
- * @method RegTareasNoRealizadas setAlumnoProfesorMateriaidAlumnoProfesorMateria()      Sets the current record's "alumno_profesor_materiaid_alumno_profesor_materia" value
- * @method RegTareasNoRealizadas setAlumnoProfesorMateria()                             Sets the current record's "AlumnoProfesorMateria" value
+ * @method integer               getId()                         Returns the current record's "id" value
+ * @method date                  getFecha()                      Returns the current record's "fecha" value
+ * @method string                getDescripcion()                Returns the current record's "descripcion" value
+ * @method integer               getNumUnidad()                  Returns the current record's "num_unidad" value
+ * @method integer               getIdAlumnoProfesorMateria()    Returns the current record's "id_alumno_profesor_materia" value
+ * @method AlumnoProfesorMateria getAlumnoProfesorMateria()      Returns the current record's "AlumnoProfesorMateria" value
+ * @method RegTareasNoRealizadas setId()                         Sets the current record's "id" value
+ * @method RegTareasNoRealizadas setFecha()                      Sets the current record's "fecha" value
+ * @method RegTareasNoRealizadas setDescripcion()                Sets the current record's "descripcion" value
+ * @method RegTareasNoRealizadas setNumUnidad()                  Sets the current record's "num_unidad" value
+ * @method RegTareasNoRealizadas setIdAlumnoProfesorMateria()    Sets the current record's "id_alumno_profesor_materia" value
+ * @method RegTareasNoRealizadas setAlumnoProfesorMateria()      Sets the current record's "AlumnoProfesorMateria" value
  * 
  * @package    escuela
  * @subpackage model
@@ -72,7 +72,7 @@ abstract class BaseRegTareasNoRealizadas extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
-        $this->hasColumn('alumno_profesor_materiaid_alumno_profesor_materia', 'integer', 4, array(
+        $this->hasColumn('id_alumno_profesor_materia', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
@@ -87,7 +87,7 @@ abstract class BaseRegTareasNoRealizadas extends sfDoctrineRecord
     {
         parent::setUp();
         $this->hasOne('AlumnoProfesorMateria', array(
-             'local' => 'alumno_profesor_materiaid_alumno_profesor_materia',
+             'local' => 'id_alumno_profesor_materia',
              'foreign' => 'id_alumno_profesor_materia'));
     }
 }

@@ -13,6 +13,7 @@ class AlumnoForm extends BaseAlumnoForm
   public function configure()
   {
       $this->widgetSchema['matricula']= new sfWidgetFormInputText();
+      $this->widgetSchema['fecha_nac']= new sfWidgetFormInputText();
       $this->widgetSchema['id_grupo']=new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Grupo'), 'add_empty' => false));
       
       //validadores

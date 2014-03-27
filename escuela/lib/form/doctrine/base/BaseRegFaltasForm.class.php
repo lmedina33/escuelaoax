@@ -15,17 +15,17 @@ abstract class BaseRegFaltasForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id'                                                => new sfWidgetFormInputHidden(),
-      'fecha'                                             => new sfWidgetFormDate(),
-      'num_unidad'                                        => new sfWidgetFormInputText(),
-      'alumno_profesor_materiaid_alumno_profesor_materia' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('AlumnoProfesorMateria'), 'add_empty' => true)),
+      'id'                         => new sfWidgetFormInputHidden(),
+      'fecha'                      => new sfWidgetFormDate(),
+      'num_unidad'                 => new sfWidgetFormInputText(),
+      'id_alumno_profesor_materia' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('AlumnoProfesorMateria'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
-      'id'                                                => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id', 'required' => false)),
-      'fecha'                                             => new sfValidatorDate(array('required' => false)),
-      'num_unidad'                                        => new sfValidatorInteger(array('required' => false)),
-      'alumno_profesor_materiaid_alumno_profesor_materia' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('AlumnoProfesorMateria'), 'required' => false)),
+      'id'                         => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id', 'required' => false)),
+      'fecha'                      => new sfValidatorDate(array('required' => false)),
+      'num_unidad'                 => new sfValidatorInteger(array('required' => false)),
+      'id_alumno_profesor_materia' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('AlumnoProfesorMateria'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('reg_faltas[%s]');
