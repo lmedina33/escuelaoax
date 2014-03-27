@@ -10,19 +10,19 @@ Doctrine_Manager::getInstance()->bindComponent('RegFaltas', 'doctrine');
  * @property integer $id
  * @property date $fecha
  * @property integer $num_unidad
- * @property integer $alumno_profesor_materiaid_alumno_profesor_materia
+ * @property integer $id_alumno_profesor_materia
  * @property AlumnoProfesorMateria $AlumnoProfesorMateria
  * 
- * @method integer               getId()                                                Returns the current record's "id" value
- * @method date                  getFecha()                                             Returns the current record's "fecha" value
- * @method integer               getNumUnidad()                                         Returns the current record's "num_unidad" value
- * @method integer               getAlumnoProfesorMateriaidAlumnoProfesorMateria()      Returns the current record's "alumno_profesor_materiaid_alumno_profesor_materia" value
- * @method AlumnoProfesorMateria getAlumnoProfesorMateria()                             Returns the current record's "AlumnoProfesorMateria" value
- * @method RegFaltas             setId()                                                Sets the current record's "id" value
- * @method RegFaltas             setFecha()                                             Sets the current record's "fecha" value
- * @method RegFaltas             setNumUnidad()                                         Sets the current record's "num_unidad" value
- * @method RegFaltas             setAlumnoProfesorMateriaidAlumnoProfesorMateria()      Sets the current record's "alumno_profesor_materiaid_alumno_profesor_materia" value
- * @method RegFaltas             setAlumnoProfesorMateria()                             Sets the current record's "AlumnoProfesorMateria" value
+ * @method integer               getId()                         Returns the current record's "id" value
+ * @method date                  getFecha()                      Returns the current record's "fecha" value
+ * @method integer               getNumUnidad()                  Returns the current record's "num_unidad" value
+ * @method integer               getIdAlumnoProfesorMateria()    Returns the current record's "id_alumno_profesor_materia" value
+ * @method AlumnoProfesorMateria getAlumnoProfesorMateria()      Returns the current record's "AlumnoProfesorMateria" value
+ * @method RegFaltas             setId()                         Sets the current record's "id" value
+ * @method RegFaltas             setFecha()                      Sets the current record's "fecha" value
+ * @method RegFaltas             setNumUnidad()                  Sets the current record's "num_unidad" value
+ * @method RegFaltas             setIdAlumnoProfesorMateria()    Sets the current record's "id_alumno_profesor_materia" value
+ * @method RegFaltas             setAlumnoProfesorMateria()      Sets the current record's "AlumnoProfesorMateria" value
  * 
  * @package    escuela
  * @subpackage model
@@ -60,7 +60,7 @@ abstract class BaseRegFaltas extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
-        $this->hasColumn('alumno_profesor_materiaid_alumno_profesor_materia', 'integer', 4, array(
+        $this->hasColumn('id_alumno_profesor_materia', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
@@ -75,7 +75,7 @@ abstract class BaseRegFaltas extends sfDoctrineRecord
     {
         parent::setUp();
         $this->hasOne('AlumnoProfesorMateria', array(
-             'local' => 'alumno_profesor_materiaid_alumno_profesor_materia',
+             'local' => 'id_alumno_profesor_materia',
              'foreign' => 'id_alumno_profesor_materia'));
     }
 }

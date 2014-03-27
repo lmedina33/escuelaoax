@@ -11,6 +11,8 @@ Doctrine_Manager::getInstance()->bindComponent('Profesor', 'doctrine');
  * @property string $nombre
  * @property string $ap_paterno
  * @property string $ap_materno
+ * @property string $tel
+ * @property string $cel
  * @property integer $cuentaid_cuenta
  * @property Cuenta $Cuenta
  * @property Doctrine_Collection $ProfesorMateria
@@ -19,6 +21,8 @@ Doctrine_Manager::getInstance()->bindComponent('Profesor', 'doctrine');
  * @method string              getNombre()          Returns the current record's "nombre" value
  * @method string              getApPaterno()       Returns the current record's "ap_paterno" value
  * @method string              getApMaterno()       Returns the current record's "ap_materno" value
+ * @method string              getTel()             Returns the current record's "tel" value
+ * @method string              getCel()             Returns the current record's "cel" value
  * @method integer             getCuentaidCuenta()  Returns the current record's "cuentaid_cuenta" value
  * @method Cuenta              getCuenta()          Returns the current record's "Cuenta" value
  * @method Doctrine_Collection getProfesorMateria() Returns the current record's "ProfesorMateria" collection
@@ -26,6 +30,8 @@ Doctrine_Manager::getInstance()->bindComponent('Profesor', 'doctrine');
  * @method Profesor            setNombre()          Sets the current record's "nombre" value
  * @method Profesor            setApPaterno()       Sets the current record's "ap_paterno" value
  * @method Profesor            setApMaterno()       Sets the current record's "ap_materno" value
+ * @method Profesor            setTel()             Sets the current record's "tel" value
+ * @method Profesor            setCel()             Sets the current record's "cel" value
  * @method Profesor            setCuentaidCuenta()  Sets the current record's "cuentaid_cuenta" value
  * @method Profesor            setCuenta()          Sets the current record's "Cuenta" value
  * @method Profesor            setProfesorMateria() Sets the current record's "ProfesorMateria" collection
@@ -74,6 +80,24 @@ abstract class BaseProfesor extends sfDoctrineRecord
              'notnull' => false,
              'autoincrement' => false,
              'length' => 50,
+             ));
+        $this->hasColumn('tel', 'string', 10, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 10,
+             ));
+        $this->hasColumn('cel', 'string', 17, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 17,
              ));
         $this->hasColumn('cuentaid_cuenta', 'integer', 4, array(
              'type' => 'integer',

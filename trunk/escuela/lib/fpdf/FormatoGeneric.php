@@ -6,47 +6,90 @@
  */
 class FormatoGeneric{
     var $class;
+    var $angle=0;
     public function __construct(FPDF $claseSolicitante) {
         $this->class= $claseSolicitante;
     }
     public function getCabecera(){
         $this->class->SetFont('Arial','B',12);
-        $this->class->Image('images/IPN_Logo.png', 17, 10, 17, 25);
-        
+        $this->class->Image('images/logo.jpg',10,10,26, 26);
+        $this->class->Image('images/bachilleres.jpg',$this->class->w-$this->class->lMargin-$this->class->rMargin-18, 10, 26, 26);
         $wTitulo=$this->class->GetStringWidth($this->class->titulo);
         
         $this->class->SetFont('Arial','B',10);
         $wCodigo=$this->class->GetStringWidth($this->class->codigo);
         
         
+        
 
-        $this->class->Cell(26);
+        $this->class->Cell(26,10,'');
         $this->class->SetFont('Arial', 'B', 12);
-        $this->class->Cell(123, $this->class->FontSize+1,utf8_decode("INSTITUTO POLITÉCNICO NACIONAL"),0,1,'C');
+        $this->class->Cell($this->class->w-$this->class->lMargin-$this->class->rMargin-54, $this->class->FontSize+1,utf8_decode("COLEGIO TORRES BODET PREPARATORIA"),0,1,'C');
+        $this->class->SetFont('Arial', 'B', 9);
         $this->class->Cell(26);
-        $this->class->Cell(123, $this->class->FontSize+1,utf8_decode("Centro Interdisciplinario de Investigación"),0,1,'C');
+        $this->class->Cell($this->class->w-$this->class->lMargin-$this->class->rMargin-54, $this->class->FontSize+1,utf8_decode("Incorporada al Colegio de Bachilleres de México"),0,1,'C');
         $this->class->Cell(26);
-        $this->class->Cell(123, $this->class->FontSize+1,utf8_decode("para el Desarrollo Integral Regional Unidad Oaxaca"),0,0,'C');
-        
-        $this->class->SetFontSize(9);
-        $this->class->Cell(40, $this->class->FontSize+1,utf8_decode($this->class->codigo),0,1,'C');
-        
+        $this->class->Cell($this->class->w-$this->class->lMargin-$this->class->rMargin-54, $this->class->FontSize+1,utf8_decode("RVOE CB/AI/01-2011/003 C.C.T 20PCB0003H"),0,1,'C');
         $this->class->SetFont('Arial', 'B', 12);
+        $this->class->Cell(26);
+        $this->class->Cell($this->class->w-$this->class->lMargin-$this->class->rMargin-54, $this->class->FontSize+1,utf8_decode($this->class->titulo),0,1,'C');
+        $this->class->Cell(26);
+        $this->class->Cell($this->class->w-$this->class->lMargin-$this->class->rMargin-54, $this->class->FontSize+1,utf8_decode("PERIODO 2013-A"),0,1,'C');
+        
+        //$this->class->SetFontSize(9);
+        //$this->class->Cell(40, $this->class->FontSize+1,utf8_decode($this->class->codigo),0,1,'C');
+        
+        /*$this->class->SetFont('Arial', 'B', 12);
         $this->class->Cell($this->getWFila(), 3,'',0,1);//espacio
         $this->class->Cell(26);
-        $this->class->Cell(123, $this->class->FontSize+1,utf8_decode("UNIDAD DE INFORMÁTICA"),0,1,'C');
+        //$this->class->Cell(123, $this->class->FontSize+1,utf8_decode("UNIDAD DE INFORMÁTICA"),0,1,'C');
         $this->class->Cell($this->getWFila(), 3,'',0,1);//espacio
         $this->class->Cell(26);
         $this->class->SetFontSize(14);
         $this->class->Cell(123, $this->class->FontSize+1,utf8_decode($this->class->titulo),0,1,'C');
             
-        $this->class->Image('images/siglas.gif', 160, 10, 30, 10);
+        //$this->class->Image('images/siglas.gif', 160, 10, 30, 10);
         $this->class->SetFontSize(10);
         
         
-        $this->class->Line($this->class->lMargin,$this->class->GetY(), $this->getWFila(), $this->class->GetY());
+        $this->class->Line($this->class->lMargin,$this->class->GetY(), $this->getWFila(), $this->class->GetY());*/
+    }
+    //FUNCIONES AUXILIARES
+    private function rotate($angle,$x=-1,$y=-1)
+    {
+        if($x==-1)
+            $x=$this->class->x;
+        if($y==-1)
+            $y=$this->class->y;
+        if($this->angle!=0)
+            $this->class->_out('Q');
+        $this->angle=$angle;
+        if($angle!=0)
+        {
+            $angle*=M_PI/180;
+            $c=cos($angle);
+            $s=sin($angle);
+            $cx=$x*$this->class->k;
+            $cy=($this->class->h-$y)*$this->class->k;
+            $this->class->_out(sprintf('q %.5F %.5F %.5F %.5F %.2F %.2F cm 1 0 0 1 %.2F %.2F cm',$c,$s,-$s,$c,$cx,$cy,-$cx,-$cy));
+        }
+    }
+    public function rotatedText($x,$y,$txt,$angle)
+    {
+        //Text rotated around its origin
+        $this->rotate($angle,$x,$y);
+        $this->class->Text($x,$y,$txt);
+        $this->rotate(0);
     }
 
+    public function rotatedImage($file,$x,$y,$w,$h,$angle)
+    {
+        //Image rotated around its upper-left corner
+        $this->rotate($angle,$x,$y);
+        $this->Image($file,$x,$y,$w,$h);
+        $this->rotate(0);
+    }
+    //ELEMENTOS
     /**
      *Dibuja una etiqueta en negrita segido de un texto subrayado ocupando toda la fila
      * @param string $titulo

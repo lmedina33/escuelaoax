@@ -1,0 +1,83 @@
+/* 
+    Document   : registroDiario
+    Created on : 18/10/2013, 06:38:45 PM
+    Author     : Juls
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+h1{
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+}
+#btnPasarLista{
+    margin-left: 45%;
+}
+#imgPasarLista{
+    background: url('../images/iconos64x.png')-5px 0px;
+    width: 64px;
+    height: 64px;
+
+}
+#imgNoTarea{
+    background: url('../images/iconos64x.png')60px -5px;
+    width: 64px;
+    height: 64px
+}
+
+/*tablas  de pase de lista y de tareas incumplidas*/
+table{
+    margin: auto;
+}
+.tabla1 thead tr{
+    /*background-color: #C81E20;/*rojo*/
+    background-color: #3F3F6E; /*azul*/
+    color: white;
+}
+.tabla1 thead tr th{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tabla1 tbody .tr1{
+    background-color: #EBEBEB;
+}
+.tabla1 tbody .tr2{
+    background-color: #F9F9F9;
+}
+.tdCentrado{
+    text-align: center
+}
+.tabla1 tbody tr:hover{
+    background-color: #B6B6B6;
+}
+
+#descNoTarea th,#descNoTarea td{
+    background-color: #C4B1AC;
+}
+
+
+/*botones para confirmar*/
+#confirmarPasLista{
+    margin-left: 45%;
+}
+#confirmarIncumplimientos{
+    margin-left: 45%;
+}
+
+
+/*Vinculos para faltas acumuladas y tareas no entregadas*/
+.detalles{
+    color: blue;
+}
+.detalles:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

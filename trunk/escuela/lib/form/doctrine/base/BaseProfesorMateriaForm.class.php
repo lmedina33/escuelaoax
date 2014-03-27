@@ -20,6 +20,7 @@ abstract class BaseProfesorMateriaForm extends BaseFormDoctrine
       'profesorid_profesor' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Profesor'), 'add_empty' => false)),
       'materiaclave'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Materia'), 'add_empty' => true)),
       'grupoid_grupo'       => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Grupo'), 'add_empty' => true)),
+      'estatus'             => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
@@ -28,6 +29,7 @@ abstract class BaseProfesorMateriaForm extends BaseFormDoctrine
       'profesorid_profesor' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Profesor'))),
       'materiaclave'        => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Materia'), 'required' => false)),
       'grupoid_grupo'       => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Grupo'), 'required' => false)),
+      'estatus'             => new sfValidatorString(array('max_length' => 1)),
     ));
 
     $this->widgetSchema->setNameFormat('profesor_materia[%s]');

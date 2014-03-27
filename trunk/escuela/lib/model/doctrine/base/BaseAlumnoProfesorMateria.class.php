@@ -10,34 +10,34 @@ Doctrine_Manager::getInstance()->bindComponent('AlumnoProfesorMateria', 'doctrin
  * @property integer $id_alumno_profesor_materia
  * @property float $examen_semestral
  * @property string $observaciones
- * @property integer $profesor_materiaid_profesor_materia
- * @property string $alumnomatricula
- * @property Alumno $Alumno
+ * @property integer $id_profesor_materia
+ * @property string $matricula
  * @property ProfesorMateria $ProfesorMateria
+ * @property Alumno $Alumno
  * @property Doctrine_Collection $Calificacion
  * @property Doctrine_Collection $RegFaltas
  * @property Doctrine_Collection $RegTareasNoRealizadas
  * 
- * @method integer               getIdAlumnoProfesorMateria()             Returns the current record's "id_alumno_profesor_materia" value
- * @method float                 getExamenSemestral()                     Returns the current record's "examen_semestral" value
- * @method string                getObservaciones()                       Returns the current record's "observaciones" value
- * @method integer               getProfesorMateriaidProfesorMateria()    Returns the current record's "profesor_materiaid_profesor_materia" value
- * @method string                getAlumnomatricula()                     Returns the current record's "alumnomatricula" value
- * @method Alumno                getAlumno()                              Returns the current record's "Alumno" value
- * @method ProfesorMateria       getProfesorMateria()                     Returns the current record's "ProfesorMateria" value
- * @method Doctrine_Collection   getCalificacion()                        Returns the current record's "Calificacion" collection
- * @method Doctrine_Collection   getRegFaltas()                           Returns the current record's "RegFaltas" collection
- * @method Doctrine_Collection   getRegTareasNoRealizadas()               Returns the current record's "RegTareasNoRealizadas" collection
- * @method AlumnoProfesorMateria setIdAlumnoProfesorMateria()             Sets the current record's "id_alumno_profesor_materia" value
- * @method AlumnoProfesorMateria setExamenSemestral()                     Sets the current record's "examen_semestral" value
- * @method AlumnoProfesorMateria setObservaciones()                       Sets the current record's "observaciones" value
- * @method AlumnoProfesorMateria setProfesorMateriaidProfesorMateria()    Sets the current record's "profesor_materiaid_profesor_materia" value
- * @method AlumnoProfesorMateria setAlumnomatricula()                     Sets the current record's "alumnomatricula" value
- * @method AlumnoProfesorMateria setAlumno()                              Sets the current record's "Alumno" value
- * @method AlumnoProfesorMateria setProfesorMateria()                     Sets the current record's "ProfesorMateria" value
- * @method AlumnoProfesorMateria setCalificacion()                        Sets the current record's "Calificacion" collection
- * @method AlumnoProfesorMateria setRegFaltas()                           Sets the current record's "RegFaltas" collection
- * @method AlumnoProfesorMateria setRegTareasNoRealizadas()               Sets the current record's "RegTareasNoRealizadas" collection
+ * @method integer               getIdAlumnoProfesorMateria()    Returns the current record's "id_alumno_profesor_materia" value
+ * @method float                 getExamenSemestral()            Returns the current record's "examen_semestral" value
+ * @method string                getObservaciones()              Returns the current record's "observaciones" value
+ * @method integer               getIdProfesorMateria()          Returns the current record's "id_profesor_materia" value
+ * @method string                getMatricula()                  Returns the current record's "matricula" value
+ * @method ProfesorMateria       getProfesorMateria()            Returns the current record's "ProfesorMateria" value
+ * @method Alumno                getAlumno()                     Returns the current record's "Alumno" value
+ * @method Doctrine_Collection   getCalificacion()               Returns the current record's "Calificacion" collection
+ * @method Doctrine_Collection   getRegFaltas()                  Returns the current record's "RegFaltas" collection
+ * @method Doctrine_Collection   getRegTareasNoRealizadas()      Returns the current record's "RegTareasNoRealizadas" collection
+ * @method AlumnoProfesorMateria setIdAlumnoProfesorMateria()    Sets the current record's "id_alumno_profesor_materia" value
+ * @method AlumnoProfesorMateria setExamenSemestral()            Sets the current record's "examen_semestral" value
+ * @method AlumnoProfesorMateria setObservaciones()              Sets the current record's "observaciones" value
+ * @method AlumnoProfesorMateria setIdProfesorMateria()          Sets the current record's "id_profesor_materia" value
+ * @method AlumnoProfesorMateria setMatricula()                  Sets the current record's "matricula" value
+ * @method AlumnoProfesorMateria setProfesorMateria()            Sets the current record's "ProfesorMateria" value
+ * @method AlumnoProfesorMateria setAlumno()                     Sets the current record's "Alumno" value
+ * @method AlumnoProfesorMateria setCalificacion()               Sets the current record's "Calificacion" collection
+ * @method AlumnoProfesorMateria setRegFaltas()                  Sets the current record's "RegFaltas" collection
+ * @method AlumnoProfesorMateria setRegTareasNoRealizadas()      Sets the current record's "RegTareasNoRealizadas" collection
  * 
  * @package    escuela
  * @subpackage model
@@ -75,7 +75,7 @@ abstract class BaseAlumnoProfesorMateria extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 255,
              ));
-        $this->hasColumn('profesor_materiaid_profesor_materia', 'integer', 4, array(
+        $this->hasColumn('id_profesor_materia', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
@@ -84,7 +84,7 @@ abstract class BaseAlumnoProfesorMateria extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
-        $this->hasColumn('alumnomatricula', 'string', 20, array(
+        $this->hasColumn('matricula', 'string', 20, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
@@ -98,24 +98,24 @@ abstract class BaseAlumnoProfesorMateria extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasOne('Alumno', array(
-             'local' => 'alumnomatricula',
-             'foreign' => 'matricula'));
-
         $this->hasOne('ProfesorMateria', array(
-             'local' => 'profesor_materiaid_profesor_materia',
+             'local' => 'id_profesor_materia',
              'foreign' => 'id_profesor_materia'));
+
+        $this->hasOne('Alumno', array(
+             'local' => 'matricula',
+             'foreign' => 'matricula'));
 
         $this->hasMany('Calificacion', array(
              'local' => 'id_alumno_profesor_materia',
-             'foreign' => 'alumno_profesor_materiaid_alumno_profesor_materia'));
+             'foreign' => 'id_alumno_profesor_materia'));
 
         $this->hasMany('RegFaltas', array(
              'local' => 'id_alumno_profesor_materia',
-             'foreign' => 'alumno_profesor_materiaid_alumno_profesor_materia'));
+             'foreign' => 'id_alumno_profesor_materia'));
 
         $this->hasMany('RegTareasNoRealizadas', array(
              'local' => 'id_alumno_profesor_materia',
-             'foreign' => 'alumno_profesor_materiaid_alumno_profesor_materia'));
+             'foreign' => 'id_alumno_profesor_materia'));
     }
 }

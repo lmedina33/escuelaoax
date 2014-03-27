@@ -12,29 +12,35 @@ Doctrine_Manager::getInstance()->bindComponent('ProfesorMateria', 'doctrine');
  * @property integer $profesorid_profesor
  * @property string $materiaclave
  * @property integer $grupoid_grupo
+ * @property string $estatus
  * @property Grupo $Grupo
  * @property Materia $Materia
  * @property Profesor $Profesor
  * @property Doctrine_Collection $AlumnoProfesorMateria
+ * @property Doctrine_Collection $PaseDeLista
  * 
  * @method integer             getIdProfesorMateria()     Returns the current record's "id_profesor_materia" value
  * @method string              getPeriodo()               Returns the current record's "periodo" value
  * @method integer             getProfesoridProfesor()    Returns the current record's "profesorid_profesor" value
  * @method string              getMateriaclave()          Returns the current record's "materiaclave" value
  * @method integer             getGrupoidGrupo()          Returns the current record's "grupoid_grupo" value
+ * @method string              getEstatus()               Returns the current record's "estatus" value
  * @method Grupo               getGrupo()                 Returns the current record's "Grupo" value
  * @method Materia             getMateria()               Returns the current record's "Materia" value
  * @method Profesor            getProfesor()              Returns the current record's "Profesor" value
  * @method Doctrine_Collection getAlumnoProfesorMateria() Returns the current record's "AlumnoProfesorMateria" collection
+ * @method Doctrine_Collection getPaseDeLista()           Returns the current record's "PaseDeLista" collection
  * @method ProfesorMateria     setIdProfesorMateria()     Sets the current record's "id_profesor_materia" value
  * @method ProfesorMateria     setPeriodo()               Sets the current record's "periodo" value
  * @method ProfesorMateria     setProfesoridProfesor()    Sets the current record's "profesorid_profesor" value
  * @method ProfesorMateria     setMateriaclave()          Sets the current record's "materiaclave" value
  * @method ProfesorMateria     setGrupoidGrupo()          Sets the current record's "grupoid_grupo" value
+ * @method ProfesorMateria     setEstatus()               Sets the current record's "estatus" value
  * @method ProfesorMateria     setGrupo()                 Sets the current record's "Grupo" value
  * @method ProfesorMateria     setMateria()               Sets the current record's "Materia" value
  * @method ProfesorMateria     setProfesor()              Sets the current record's "Profesor" value
  * @method ProfesorMateria     setAlumnoProfesorMateria() Sets the current record's "AlumnoProfesorMateria" collection
+ * @method ProfesorMateria     setPaseDeLista()           Sets the current record's "PaseDeLista" collection
  * 
  * @package    escuela
  * @subpackage model
@@ -90,6 +96,15 @@ abstract class BaseProfesorMateria extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
+        $this->hasColumn('estatus', 'string', 1, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 1,
+             ));
     }
 
     public function setUp()
@@ -109,6 +124,10 @@ abstract class BaseProfesorMateria extends sfDoctrineRecord
 
         $this->hasMany('AlumnoProfesorMateria', array(
              'local' => 'id_profesor_materia',
-             'foreign' => 'profesor_materiaid_profesor_materia'));
+             'foreign' => 'id_profesor_materia'));
+
+        $this->hasMany('PaseDeLista', array(
+             'local' => 'id_profesor_materia',
+             'foreign' => 'id_profesor_materia'));
     }
 }

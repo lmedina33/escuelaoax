@@ -11,8 +11,11 @@ Doctrine_Manager::getInstance()->bindComponent('Alumno', 'doctrine');
  * @property string $nombre
  * @property string $ap_paterno
  * @property string $ap_materno
+ * @property date $fecha_nac
  * @property string $estatus
+ * @property integer $id_tutor
  * @property integer $id_grupo
+ * @property Tutor $Tutor
  * @property Grupo $Grupo
  * @property Doctrine_Collection $AlumnoProfesorMateria
  * 
@@ -20,16 +23,22 @@ Doctrine_Manager::getInstance()->bindComponent('Alumno', 'doctrine');
  * @method string              getNombre()                Returns the current record's "nombre" value
  * @method string              getApPaterno()             Returns the current record's "ap_paterno" value
  * @method string              getApMaterno()             Returns the current record's "ap_materno" value
+ * @method date                getFechaNac()              Returns the current record's "fecha_nac" value
  * @method string              getEstatus()               Returns the current record's "estatus" value
+ * @method integer             getIdTutor()               Returns the current record's "id_tutor" value
  * @method integer             getIdGrupo()               Returns the current record's "id_grupo" value
+ * @method Tutor               getTutor()                 Returns the current record's "Tutor" value
  * @method Grupo               getGrupo()                 Returns the current record's "Grupo" value
  * @method Doctrine_Collection getAlumnoProfesorMateria() Returns the current record's "AlumnoProfesorMateria" collection
  * @method Alumno              setMatricula()             Sets the current record's "matricula" value
  * @method Alumno              setNombre()                Sets the current record's "nombre" value
  * @method Alumno              setApPaterno()             Sets the current record's "ap_paterno" value
  * @method Alumno              setApMaterno()             Sets the current record's "ap_materno" value
+ * @method Alumno              setFechaNac()              Sets the current record's "fecha_nac" value
  * @method Alumno              setEstatus()               Sets the current record's "estatus" value
+ * @method Alumno              setIdTutor()               Sets the current record's "id_tutor" value
  * @method Alumno              setIdGrupo()               Sets the current record's "id_grupo" value
+ * @method Alumno              setTutor()                 Sets the current record's "Tutor" value
  * @method Alumno              setGrupo()                 Sets the current record's "Grupo" value
  * @method Alumno              setAlumnoProfesorMateria() Sets the current record's "AlumnoProfesorMateria" collection
  * 
@@ -78,6 +87,15 @@ abstract class BaseAlumno extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 50,
              ));
+        $this->hasColumn('fecha_nac', 'date', 25, array(
+             'type' => 'date',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 25,
+             ));
         $this->hasColumn('estatus', 'string', 6, array(
              'type' => 'string',
              'fixed' => 0,
@@ -86,6 +104,15 @@ abstract class BaseAlumno extends sfDoctrineRecord
              'notnull' => false,
              'autoincrement' => false,
              'length' => 6,
+             ));
+        $this->hasColumn('id_tutor', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 4,
              ));
         $this->hasColumn('id_grupo', 'integer', 4, array(
              'type' => 'integer',
@@ -101,12 +128,16 @@ abstract class BaseAlumno extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
+        $this->hasOne('Tutor', array(
+             'local' => 'id_tutor',
+             'foreign' => 'id_tutor'));
+
         $this->hasOne('Grupo', array(
              'local' => 'id_grupo',
              'foreign' => 'id_grupo'));
 
         $this->hasMany('AlumnoProfesorMateria', array(
              'local' => 'matricula',
-             'foreign' => 'alumnomatricula'));
+             'foreign' => 'matricula'));
     }
 }
