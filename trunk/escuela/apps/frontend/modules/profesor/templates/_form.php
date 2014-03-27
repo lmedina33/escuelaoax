@@ -1,46 +1,66 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
-
-<form action="<?php echo url_for('profesor/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id_profesor='.$form->getObject()->getIdProfesor() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
-<?php if (!$form->getObject()->isNew()): ?>
-<input type="hidden" name="sf_method" value="put" />
-<?php endif; ?>
-  <table>
-    <tfoot>
-      <tr>
-        <td colspan="2">
-          <?php echo $form->renderHiddenFields(false) ?>
-          &nbsp;<a href="<?php echo url_for('profesor/index') ?>">Regresar a la lista</a>
-          <?php if (!$form->getObject()->isNew()): ?>
-            &nbsp;<?php echo link_to('Borrar', 'profesor/delete?id_profesor='.$form->getObject()->getIdProfesor(), array('method' => 'delete', 'confirm' => 'Are you sure?')) ?>
-          <?php endif; ?>
-          <input type="submit" value="Guardar" />
-        </td>
-      </tr>
-    </tfoot>
-    <tbody>
-      <?php echo $form->renderGlobalErrors() ?>
-      <tr>
-        <th><?php echo $form['nombre']->renderLabel('Nombre:') ?></th>
-        <td>
-          <?php echo $form['nombre']->renderError() ?>
-          <?php echo $form['nombre'] ?>
-        </td>
-      </tr>
-      <tr>
-        <th><?php echo $form['ap_paterno']->renderLabel('Apellido paterno:') ?></th>
-        <td>
-          <?php echo $form['ap_paterno']->renderError() ?>
-          <?php echo $form['ap_paterno'] ?>
-        </td>
-      </tr>
-      <tr>
-        <th><?php echo $form['ap_materno']->renderLabel('Apellido materno:') ?></th>
-        <td>
-          <?php echo $form['ap_materno']->renderError() ?>
-          <?php echo $form['ap_materno'] ?>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<div id="formProfesor">
+<form>
+  <fieldset>
+      <legend>Datos del Profesor</legend>
+    <table>
+        <tfoot>
+        <tr>
+            <td colspan="2">
+            <?php echo $form->renderHiddenFields(false) ?>
+            </td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <?php echo $form->renderGlobalErrors() ?>
+        <tr>
+            <td><?php echo $form['nombre']->renderLabel('Nombre') ?></td>
+            <td>
+            <?php echo $form['nombre']->renderError() ?>
+            <?php echo $form['nombre'] ?>
+            </td>
+            <td><?php echo $form['ap_paterno']->renderLabel('Apellido paterno') ?></td>
+            <td>
+            <?php echo $form['ap_paterno']->renderError() ?>
+            <?php echo $form['ap_paterno'] ?>
+            </td>
+            <td><?php echo $form['ap_materno']->renderLabel('Apellido materno') ?></td>
+            <td>
+            <?php echo $form['ap_materno']->renderError() ?>
+            <?php echo $form['ap_materno'] ?>
+            </td>
+        </tr>
+        <tr>
+            <td><?php echo $form['tel']->renderLabel('Telefono') ?></td>
+            <td>
+            <?php echo $form['tel']->renderError() ?>
+            <?php echo $form['tel'] ?>
+            </td>
+            <td><?php echo $form['cel']->renderLabel('Celular') ?></td>
+            <td>
+            <?php echo $form['cel']->renderError() ?>
+            <?php echo $form['cel'] ?>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+  </fieldset>
+  <fieldset>
+      <table>
+          <tr>
+            <td><?php echo $formCuenta['usuario']->renderLabel('Usuario') ?></td>
+            <td>
+            <?php echo $formCuenta['usuario']->renderError() ?>
+            <?php echo $formCuenta['usuario'] ?>
+            </td>
+            <td><?php echo $formCuenta['contrasenia']->renderLabel('Contraseña') ?></td>
+            <td>
+            <?php echo $formCuenta['contrasenia']->renderError() ?>
+            <?php echo $formCuenta['contrasenia'] ?>
+            </td>
+          </tr>
+      </table>
+  </fieldset>
 </form>
+</div>

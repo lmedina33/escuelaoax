@@ -3,13 +3,14 @@
         $(".calif").change(function(){
             var x=$(this).attr("x")
             var suma=0;
-            console.log($(".calif[x="+x+"]").length)
+            //console.log($(".calif[x="+x+"]").length)
             for(var i=0;i<$(".calif[x="+x+"]").length;i++){
-                suma+=parseInt($($(".calif[x="+x+"]")[i]).val())
+                suma+=parseFloat($($(".calif[x="+x+"]")[i]).val())
             }
-            console.log(suma)
+            console.log("suma="+suma)
             var promedio=suma/3;
-            $(".promedio[x="+x+"]").text(promedio)
+            //promedio= promedio.toFixes(2)
+            $(".promedio[x="+x+"]").text(promedio.toFixed(1))
             
         })
     })
@@ -58,11 +59,11 @@
                     <td></td>
                     <td></td>
                     <td><label class="promedio" x="<?php echo $cont?>"></label></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text" size="2" x="<?php echo $cont?>"></td>
+                    <td><input type="text" size="2" x="<?php echo $cont?>" class="eo1"></td>
+                    <td><input type="text" size="2" x="<?php echo $cont?>" class="eo2"></td>
+                    <td><input type="text" size="2" x="<?php echo $cont?>" class="eo3"></td>
+                    <td><label class="califFinal" x="<?php echo $cont?>"></label></td>
                 </tr>
                 <?php endforeach;?>
             </tbody>

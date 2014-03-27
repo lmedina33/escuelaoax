@@ -39,6 +39,11 @@
                         <li class='last'><a href='#'><span>Por Materia</span></a></li>
                     </ul>
                 </li>
+                <li class='has-sub'><a href='#'><span>Otros</span></a>
+                    <ul>
+                        <li class='last'><a href='#'><span>Cardex materias</span></a></li>
+                    </ul>
+                </li>
                 <li class="last"><a href=<?php echo url_for('logueo/logout')?>><span>Salir</span></a></li>
             </ul>
         </div>

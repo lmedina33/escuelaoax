@@ -20,6 +20,7 @@ class profesorActions extends sfActions
   public function executeNew(sfWebRequest $request)
   {
     $this->form = new ProfesorForm();
+    $this->formCuenta= new CuentaForm();
   }
 
   public function executeCreate(sfWebRequest $request)
