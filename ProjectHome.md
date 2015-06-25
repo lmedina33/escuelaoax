@@ -1,0 +1,1 @@
+software para el control de calificaciones de una escuela, impresión de reportes y logueo de profesores.
